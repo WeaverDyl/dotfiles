@@ -273,8 +273,11 @@ bindsym $mod+9 exec --no-startup-id blurlock
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id nitrogen --restore
-exec --no-startup-id compton -b --config ~/.config/compton.conf
-exec --no-startup-id manjaro-hello
+
+
+#exec --no-startup-id compton -b --config ~/.config/compton.conf
+
+#exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
@@ -419,4 +422,8 @@ mode "$mode_gaps_outer" {
 
 # Startup custom
 exec --no-startup-id sxhkd # For custom keybinds
-exec_always setbg & # wallpaper
+exec setbg & # wallpaper
+
+#pywal
+#set $wallpaper "/home/dylanw/.config/wall.jpg"
+exec --no-startup-id wal -i $HOME/.config/wall.jpg

@@ -50,10 +50,6 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
 ################################################################################################
 
-# Screen brightness controls
-# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
-
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec firefox
@@ -425,5 +421,5 @@ exec --no-startup-id sxhkd # For custom keybinds
 exec setbg & # wallpaper
 
 #pywal
-#set $wallpaper "/home/dylanw/.config/wall.jpg"
-exec --no-startup-id wal -i $HOME/.config/wall.jpg
+set $wallpaper "/home/dylanw/.config/wall.jpg"
+exec --no-startup-id wal -i $wallpaper

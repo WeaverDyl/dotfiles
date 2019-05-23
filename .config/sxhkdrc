@@ -1,2 +1,16 @@
 super + grave
 	dmenuunicode
+
+# Media
+XF86AudioLowerVolume
+	amixer set Master 1-
+XF86AudioRaiseVolume
+	amixer set Master 1+
+XF86AudioMute
+	amixer -q sset Master,0 toggle
+XF86AudioPlay
+	playerctl play-pause
+XF86AudioNext
+	playerctl next
+XF86AudioPrev
+	playerctl previous

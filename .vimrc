@@ -1,1 +1,0 @@
-colorscheme badwolf	" I like

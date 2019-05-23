@@ -272,7 +272,7 @@ bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore
+#exec --no-startup-id nitrogen --restore
 exec --no-startup-id compton -b --config ~/.config/compton.conf
 exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
@@ -286,8 +286,6 @@ exec --no-startup-id clipit
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-
-exec --no-startup-id sxhkd
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
@@ -418,3 +416,7 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
+# Startup custom
+exec --no-startup-id sxhkd # For custom keybinds
+exec_always setbg & # wallpaper

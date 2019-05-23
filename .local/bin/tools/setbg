@@ -1,0 +1,3 @@
+#!/bin/sh
+
+nitrogen --set-scaled ~/.config/wall.jpg

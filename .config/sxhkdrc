@@ -8,6 +8,8 @@ super + grave
 # Now from ~/.i3/config:
 super + 9
 	blurlock
+super + alt + r
+	$TERMINAL -e "bash -ic ranger"
 
 # Scratchpad
 # make better binds, use for spotify, steam, discord, etc...

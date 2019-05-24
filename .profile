@@ -6,5 +6,6 @@ export BROWSER=/usr/bin/firefox
 export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 export TERMINAL=termite
 export TERM=termite
+export TERMCMD=termite
 
 echo "$0" | grep "bash$" >/dev/null && [ -f ~/.bashrc ] && source "$HOME/.bashrc"

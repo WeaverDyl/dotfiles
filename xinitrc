@@ -1,5 +1,5 @@
 #!/bin/sh
 
-setbg &
+[ -f "$Home/.xprofile" ] && . ~/.xprofile
 
 exec i3

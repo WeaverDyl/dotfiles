@@ -1,0 +1,4 @@
+#!/bin/sh
+
+setbg & # Background
+sxhkd & # Key bindings

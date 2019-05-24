@@ -384,10 +384,6 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-# Startup custom
-exec --no-startup-id sxhkd # For custom keybinds
-exec setbg & # wallpaper
-
 # pywal
 set $wallpaper "/home/dylanw/.config/wall.jpg"
 exec --no-startup-id wal -i $wallpaper

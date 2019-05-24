@@ -5,11 +5,23 @@ super + alt + 1
 # General
 super + grave
 	dmenuunicode
+# Now from ~/.i3/config:
+super + 9
+	blurlock
 
 # Scratchpad
 # make better binds, use for spotify, steam, discord, etc...
-super + grave + c
+# Spotify
+super + c
 	i3 "[con_mark=\"spotify\"] scratchpad show"
+
+# Cycle scratchpads
+super + minus
+	i3 "scratchpad show"
+
+# Move focus to scratchpad (add class?)
+super + shift + minus
+	i3 "move scratchpad"
 
 # Media
 XF86AudioLowerVolume
@@ -24,3 +36,17 @@ XF86AudioNext
 	playerctl next
 XF86AudioPrev
 	playerctl previous
+
+# i3
+# Reload i3 config
+super + shift + c
+	i3 "reload"
+
+# Restart i3 inplace
+super + shift + r
+	i3 "restart"
+
+# exit i3..
+
+
+# Switch workstations {1-8}...

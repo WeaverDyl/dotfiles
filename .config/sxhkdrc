@@ -14,7 +14,8 @@ super + Return
 	$TERMINAL
 super + d
 	dmenu_recency
-
+super + F2
+	firefox
 # Scratchpad
 # make better binds, use for spotify, steam, discord, etc...
 # Spotify

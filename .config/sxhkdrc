@@ -1,11 +1,21 @@
+# Reload sxhkd config
+super + alt + 1
+	pkill -USR1 -x sxhkd
+
+# General
 super + grave
 	dmenuunicode
 
+# Scratchpad
+# make better binds, use for spotify, steam, discord, etc...
+super + grave + c
+	i3 "[con_mark=\"spotify\"] scratchpad show"
+
 # Media
 XF86AudioLowerVolume
-	amixer set Master 1-
+	amixer set Master 1%-
 XF86AudioRaiseVolume
-	amixer set Master 1+
+	amixer set Master 1%+
 XF86AudioMute
 	amixer -q sset Master,0 toggle
 XF86AudioPlay

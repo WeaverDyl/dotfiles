@@ -420,6 +420,14 @@ mode "$mode_gaps_outer" {
 exec --no-startup-id sxhkd # For custom keybinds
 exec setbg & # wallpaper
 
-#pywal
+# pywal
 set $wallpaper "/home/dylanw/.config/wall.jpg"
 exec --no-startup-id wal -i $wallpaper
+
+# Spotify
+for_window [class="Spotify"] mark "spotify", move scratchpad
+exec spotify
+
+# Steam
+
+# Discord

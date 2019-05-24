@@ -10,6 +10,10 @@ super + 9
 	blurlock
 super + alt + r
 	$TERMINAL -e "bash -ic ranger"
+super + Return
+	$TERMINAL
+super + d
+	dmenu_recency
 
 # Scratchpad
 # make better binds, use for spotify, steam, discord, etc...

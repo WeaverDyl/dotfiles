@@ -33,7 +33,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/Pictures/wallpapers/landscape/PVb6bVc.jpg" added="2019-05-24T15:23:30Z" modified="2019-05-24T15:31:30Z" visited="2019-05-24T15:23:31Z">
+  <bookmark href="file:///home/dylanw/Pictures/wallpapers/landscape/PVb6bVc.jpg" added="2019-05-24T15:23:30Z" modified="2019-05-25T21:17:11Z" visited="2019-05-24T15:23:31Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/jpeg"/>
@@ -42,6 +42,8 @@
         </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-05-24T15:31:30Z" count="4"/>
+          <bookmark:application name="wpg" exec="&apos;wpg %u&apos;" modified="2019-05-25T20:12:57Z" count="1"/>
+          <bookmark:application name="__main__.py" exec="&apos;__main__.py %u&apos;" modified="2019-05-25T21:17:11Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -137,7 +139,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/Pictures/wallpapers/wallhaven-769952.jpg" added="2019-05-25T02:17:02Z" modified="2019-05-25T02:17:02Z" visited="2019-05-25T02:17:02.317609Z">
+  <bookmark href="file:///home/dylanw/Pictures/wallpapers/wallhaven-769952.jpg" added="2019-05-25T02:17:02Z" modified="2019-05-25T02:17:02Z" visited="2019-05-25T02:17:02Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/jpeg"/>
@@ -146,6 +148,34 @@
         </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-05-25T02:17:02Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Pictures/2019-05-25-004800_1920x1080_scrot.png" added="2019-05-25T20:11:26Z" modified="2019-05-25T20:11:26Z" visited="2019-05-25T20:11:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-05-25T20:11:26Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_dylanw0/default.Xdefaults.txt" added="2019-05-25T21:06:14Z" modified="2019-05-25T21:06:15Z" visited="2019-05-25T21:06:15Z">
+    <desc>Charset: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-25T21:06:14Z" count="1"/>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2019-05-25T21:06:15Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

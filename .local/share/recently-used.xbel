@@ -56,22 +56,26 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/Pictures/wallpapers/wallhaven-674454.jpg" added="2019-05-24T15:37:43Z" modified="2019-05-24T15:37:43Z" visited="2019-05-24T15:37:44Z">
+  <bookmark href="file:///home/dylanw/Pictures/wallpapers/wallhaven-674454.jpg" added="2019-05-24T15:37:43Z" modified="2019-05-25T00:00:15Z" visited="2019-05-24T15:37:44Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-24T15:37:43Z" count="2"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-05-25T00:00:15Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/dotfiles/wallpapers/r9iFiev.jpg" added="2019-05-24T15:39:58Z" modified="2019-05-24T15:39:59Z" visited="2019-05-24T15:39:59Z">
+  <bookmark href="file:///home/dylanw/dotfiles/wallpapers/r9iFiev.jpg" added="2019-05-24T15:39:58Z" modified="2019-05-25T01:11:10Z" visited="2019-05-24T15:39:59Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/jpeg"/>
         <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-24T15:39:59Z" count="2"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-25T01:11:10Z" count="4"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -100,7 +104,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/Pictures/wallpapers/r9iFiev.jpg" added="2019-05-24T16:13:07Z" modified="2019-05-24T16:13:07Z" visited="2019-05-24T16:13:08.150998Z">
+  <bookmark href="file:///home/dylanw/Pictures/wallpapers/r9iFiev.jpg" added="2019-05-24T16:13:07Z" modified="2019-05-25T01:33:06Z" visited="2019-05-24T16:13:08Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/jpeg"/>
@@ -108,7 +112,17 @@
           <bookmark:group>Graphics</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-05-24T16:13:07Z" count="1"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-05-25T01:33:06Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Pictures/wallpapers/wallhaven-767104.png" added="2019-05-25T00:47:57Z" modified="2019-05-25T00:47:59Z" visited="2019-05-25T00:47:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-25T00:47:59Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>

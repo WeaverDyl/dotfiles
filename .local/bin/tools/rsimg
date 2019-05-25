@@ -1,0 +1,15 @@
+#!/bin/bash
+
+shopt -s nullglob
+
+for i in "$1"/*.{jpg,jpeg,png}; do
+	size=$(identify -ping -format '%wx%h' $i | grep -o '[0-9]*$')
+	if [[ ${size[0]} -eq $2 && ${size[1]} -eq $3 ]]; then
+		echo "$i correct size already!"
+	else
+		echo "Resizing $i!"
+		$(convert $i -resize $2x$3! $i)
+	fi
+done
+
+shopt -u nullglob

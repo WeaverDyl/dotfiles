@@ -55,11 +55,11 @@ font-0 = NotoSans-Regular:size=9;0
 font-1 = Material\ Icons:size=11;2
 font-2 = xos4\ Terminus:size=14;0
 font-3 = Siji:pixelsize=11;1
-font-4 = FontAwesome:size=11;0
+font-4 = fontawesome-webfont:size=11;0
 
-modules-left = bspwm i3
-modules-center = mpd
-modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-left = i3 spotify
+#modules-center = mpd
+modules-right = filesystem alsa pulseaudio xkeyboard memory cpu wlan eth temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -78,6 +78,14 @@ tray-padding = 2
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[module/spotify]
+type = custom/script
+interval = 1
+format-prefix = " "
+format = <label>
+exec = python $HOME/.config/polybar/spotify.py -p '  ,  '
+format-underline = #1db954
 
 [module/xwindow]
 type = internal/xwindow

@@ -5,7 +5,6 @@ super + alt + 1
 # General
 super + grave
 	dmenuunicode
-# Now from ~/.i3/config:
 super + 9
 	blurlock
 super + alt + r
@@ -16,19 +15,6 @@ super + d
 	rofi -show run -theme Arc-Dark
 super + F2
 	firefox
-# Scratchpad
-# make better binds, use for spotify, steam, discord, etc...
-# Spotify
-super + c
-	i3 "[con_mark=\"spotify\"] scratchpad show"
-
-# Cycle scratchpads
-super + minus
-	i3 "scratchpad show"
-
-# Move focus to scratchpad (add class?)
-super + shift + minus
-	i3 "move scratchpad"
 
 # Media
 XF86AudioLowerVolume

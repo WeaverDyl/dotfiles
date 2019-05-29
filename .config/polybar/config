@@ -21,9 +21,9 @@ background = #222
 background-alt = #444
 foreground = #dfdfdf
 foreground-alt = #555
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
+primary = #dfdfdf
+secondary = #dfdfdf
+alert = #dfdfdf
 
 [bar/main]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -109,20 +109,15 @@ label-empty = %index%
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 
-; Separator in between workspaces
-; label-separator = |
-
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
 
-; Only show workspaces on the same output as the bar
-;pin-workspaces = true
-
+; different i3 modes [resize, etc...]
 label-mode-padding = 2
-label-mode-foreground = #000
+label-mode-foreground = #dfdfdf
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor

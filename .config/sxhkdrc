@@ -13,7 +13,7 @@ super + alt + r
 super + Return
 	$TERMINAL
 super + d
-	dmenu_recency
+	rofi -show run -theme Arc-Dark
 super + F2
 	firefox
 # Scratchpad

@@ -186,7 +186,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 type = internal/date
 interval = 1
 
-date = " %m/%d/%Y"
+date = " %m/%d/%Y (%a)"
 time =  %H:%M:%S
 
 format-prefix = 

@@ -10,21 +10,11 @@ hide_edge_borders none
 # kill focused window
 bindsym $mod+Shift+q kill
 
-################################################################################################
-## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
-################################################################################################
-
-exec --no-startup-id volumeicon
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-#exec --no-startup-id pulseaudio
-#exec --no-startup-id pa-applet
-#bindsym $mod+Ctrl+m exec pavucontrol
 
-################################################################################################
 bindsym Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
-# focus_follows_mouse no
 
 # change focus
 bindsym $mod+j focus left
@@ -184,5 +174,6 @@ exec --no-startup-id wal -i $wallpaper
 for_window [class="Spotify"] mark "spotify", move scratchpad
 exec spotify
 
-# Steam
-
+# i3 Basic Binds #
+bindsym $mod+shift+c	reload
+bindsym $mod+shift+r	restart, launch-polybar

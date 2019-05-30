@@ -1,6 +1,6 @@
 [global]
-    frame_width = 1
-    frame_color = "#aaaaaa"
+    frame_width = 3
+    frame_color = "#8ec07c"
     
     font = Noto Sans 10
     
@@ -119,7 +119,7 @@
     # Draw a line of "separator_height" pixel height between two
     # notifications.
     # Set to 0 to disable.
-    separator_height = 1
+    separator_height = 2
     
     # Padding between text and separator.
     # padding = 8
@@ -134,7 +134,7 @@
     #  * foreground: use the same color as the foreground;
     #  * frame: use the same color as the frame;
     #  * anything else will be interpreted as a X color.
-    separator_color = "#aaaaaa" 
+    separator_color = frame 
     
     # Print a notification on startup.
     # This is mainly for error detection, since dbus (re-)starts dunst
@@ -145,7 +145,7 @@
     dmenu = /usr/bin/dmenu -p dunst:
     
     # Browser for opening urls in context menu.
-    browser = palemoon
+    browser = firefox
 
     # Align icons left/right/off
     icon_position = left
@@ -179,18 +179,19 @@
     context = ctrl+mod1+c
 
 [urgency_low]
+    frame_color = "#3b7c87"
     background = "#222222"
-    #background = "#263238"
     foreground = "#888888"
     timeout = 10
 
 [urgency_normal]
-    
+    frame_color = "#5b8234"
     background = "#222222"
-    foreground = "#e5e500"
+    foreground = "#5b8234"
     timeout = 10
 
 [urgency_critical]
+    frame_color = "#b7472a"
     background = "#222222"    
-    foreground = "#FF0000"
+    foreground = "#b7472a"
     timeout = 0

@@ -5,22 +5,13 @@ smart_gaps on
 smart_borders on
 gaps inner 14
 gaps outer -2
-
-# Configure border style <normal|1pixel|pixel xx|none|pixel>
 new_window pixel 1
 new_float normal
-
-# Hide borders
 hide_edge_borders none
 
 # Basic Binds #
 bindsym $mod+Shift+q		kill
 bindsym $mod+Shift+e		exec "i3-nagbar -m 'Really exit i3?' -b 'Yes, exit i3'  'i3-msg exit'"
-
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-
-bindsym Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # Change focus
 bindsym $mod+Left focus left
@@ -91,23 +82,6 @@ bindsym $mod+Ctrl+6 move container to workspace $ws6
 bindsym $mod+Ctrl+7 move container to workspace $ws7
 bindsym $mod+Ctrl+8 move container to workspace $ws8
 
-# Open specific applications in floating mode
-for_window [class="Galculator"] floating enable border pixel 1 # keep, move elsewhere
-for_window [class="GParted"] floating enable border normal
-for_window [class="Lightdm-settings"] floating enable
-for_window [class="Lxappearance"] floating enable sticky enable border normal
-for_window [class="Manjaro Settings Manager"] floating enable border normal
-for_window [class="Oblogout"] fullscreen enable
-for_window [class="octopi"] floating enable
-for_window [class="Pamac-manager"] floating enable
-for_window [class="Pavucontrol"] floating enable
-for_window [class="qt5ct"] floating enable sticky enable border normal
-for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
-for_window [class="Simple-scan"] floating enable border normal
-for_window [class="(?i)System-config-printer.py"] floating enable border normal
-for_window [class="Timeset-gui"] floating enable border normal
-for_window [class="Xfburn"] floating enable
-
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
 
@@ -130,15 +104,6 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-# Autostart applications
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-#exec --no-startup-id compton -b --config ~/.config/compton.conf
-exec --no-startup-id nm-applet
-exec --no-startup-id xfce4-power-manager
-exec --no-startup-id pamac-tray
-exec --no-startup-id clipit
-exec_always --no-startup-id fix_xcursor
-
 # pywal
 set $wallpaper "/home/dylanw/.config/wall.jpg"
 exec --no-startup-id wal -i $wallpaper
@@ -150,9 +115,40 @@ exec spotify
 # i3 Basic Binds #
 bindsym $mod+Shift+r		exec i3-msg reload; exec launch-polybar
 
-
 # i3 Scratchpad Binds #
 bindsym $mod+minus		scratchpad show
 bindsym $mod+Shift+minus	move scratchpad
 bindsym $mod+c			[con_mark="spotify"] scratchpad show
 
+# END OF i3
+
+# Autostart applications (move elsewhere eventually)
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#exec --no-startup-id compton -b --config ~/.config/compton.conf
+exec --no-startup-id nm-applet
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id pamac-tray
+exec --no-startup-id clipit
+exec_always --no-startup-id fix_xcursor
+
+# Autostart applications
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#exec --no-startup-id compton -b --config ~/.config/compton.conf
+exec --no-startup-id nm-applet
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id pamac-tray
+exec --no-startup-id clipit
+exec_always --no-startup-id fix_xcursor
+
+
+
+# Open specific applications in floating mode
+for_window [class="Galculator"] floating enable border pixel 1 # keep, move elsewhere
+for_window [class="GParted"] floating enable border normal
+for_window [class="Lightdm-settings"] floating enable
+for_window [class="Lxappearance"] floating enable sticky enable border normal
+for_window [class="Manjaro Settings Manager"] floating enable border normal
+for_window [class="Pamac-manager"] floating enable
+for_window [class="Pavucontrol"] floating enable
+for_window [class="qt5ct"] floating enable sticky enable border normal
+for_window [class="(?i)System-config-printer.py"] floating enable border normal

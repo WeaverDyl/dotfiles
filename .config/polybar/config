@@ -117,8 +117,6 @@ wrapping-scroll = false
 
 ; different i3 modes [resize, etc...]
 label-mode-padding = 2
-label-mode-foreground = #dfdfdf
-label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%

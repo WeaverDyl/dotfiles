@@ -180,7 +180,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/2019-05-29-134115_1920x1080_scrot.png" added="2019-05-29T17:41:27Z" modified="2019-05-29T17:41:27Z" visited="2019-05-29T17:41:27.646411Z">
+  <bookmark href="file:///home/dylanw/2019-05-29-134115_1920x1080_scrot.png" added="2019-05-29T17:41:27Z" modified="2019-05-29T17:41:27Z" visited="2019-05-29T17:41:27Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/png"/>
@@ -189,6 +189,19 @@
         </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-05-29T17:41:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/2019-05-24-193031_1920x1080_scrot.png" added="2019-05-30T02:05:54Z" modified="2019-05-30T02:05:54Z" visited="2019-05-30T02:05:54.788871Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-05-30T02:05:54Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

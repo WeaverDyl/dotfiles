@@ -15,6 +15,10 @@ super + d
 	rofi -show run -theme Arc-Dark
 super + F2
 	firefox
+@Print
+	i3-scrot -s	
+@super + Print
+	i3-scrot
 
 # Media
 XF86AudioLowerVolume

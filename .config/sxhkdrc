@@ -12,7 +12,7 @@ super + alt + r
 super + Return
 	$TERMINAL
 super + d
-	rofi -show run -theme Arc-Dark
+	rofi -show run
 super + F2
 	firefox
 @Print

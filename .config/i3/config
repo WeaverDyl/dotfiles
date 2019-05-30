@@ -5,7 +5,7 @@ smart_gaps on
 smart_borders on
 gaps inner 14
 gaps outer -2
-new_window pixel 1
+new_window pixel 2
 new_float normal
 hide_edge_borders none
 
@@ -151,4 +151,16 @@ for_window [class="Manjaro Settings Manager"] floating enable border normal
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
-for_window [class="(?i)System-config-printer.py"] floating enable border normal
+for_window [class="(?i)System-config-printer.py"] floating enable border norma
+
+
+# Coloring
+
+set_from_resource $fg foreground
+set_from_resource $bg background
+set_from_resource $fbg color8
+#		   	border bg text indicator
+client.focused          $fbg $fbg $bg $fbg
+client.focused_inactive $bg $bg $bg $bg
+client.unfocused        $bg $bg $bg $bg
+client.urgent           $bg $bg $bg $bg

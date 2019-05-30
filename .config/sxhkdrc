@@ -32,4 +32,4 @@ XF86AudioPlay
 XF86AudioNext
 	playerctl next
 XF86AudioPrev
-playerctl previous
+	playerctl previous

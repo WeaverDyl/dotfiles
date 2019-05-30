@@ -13,6 +13,7 @@ XTerm*faceName:          Fixed
 XTerm*faceSize:          11
 XTerm*reverseVideo:      on
 XTerm*selectToClipboard: true
+XTerm*font: 		 Noto-Sans:pixelsize=10
 
 *background:                      #222D31
 *foreground:                      #d8d8d8
@@ -77,11 +78,6 @@ URxvt*cursorBlink:                true
 URxvt*background:                 black
 URxvt*foreground:                 grey
 URxvt*saveLines:                  5000
-
-! for 'fake' transparency (without Compton) uncomment the following three lines
-! URxvt*inheritPixmap:            true
-! URxvt*transparent:              true
-! URxvt*shading:                  138
 
 ! Normal copy-paste keybindings without perls
 URxvt.iso14755:                   false

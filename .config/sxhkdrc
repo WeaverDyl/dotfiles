@@ -5,20 +5,13 @@ super + alt + 1
 # General
 super + grave
 	dmenuunicode
+# Now from ~/.i3/config:
 super + 9
 	blurlock
+
+# cheaphax ranger
 super + alt + r
 	$TERMINAL -e "bash -ic ranger"
-super + Return
-	$TERMINAL
-super + d
-	rofi -show run
-super + F2
-	firefox
-@Print
-	i3-scrot -s	
-@super + Print
-	i3-scrot
 
 # Media
 XF86AudioLowerVolume

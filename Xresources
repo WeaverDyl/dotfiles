@@ -20,8 +20,8 @@
 #define COLOR14	#bec0b5
 #define COLOR15	#dadbd4
 
-*.background: 	BACKGOUND
-*.foreground: 	FOREGROUND
+*background: 	BACKGROUND
+*foreground: 	FOREGROUND
 
 *.color0: 	COLOR0
 *.color1: 	COLOR1

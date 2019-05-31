@@ -18,9 +18,9 @@
 
 [colors]
 background = ${xrdb:background}
-background-alt = ${xrdb:color1}
+background-alt = ${xrdb:color2}
 foreground = ${xrdb:foreground}
-foreground-alt = ${xrdb:color2}
+foreground-alt = ${xrdb:color15}
 primary = ${xrdb:foreground}
 secondary = ${xrdb:foreground}
 alert = ${xrdb:foreground}
@@ -30,9 +30,8 @@ alert = ${xrdb:foreground}
 width = 100%
 height = 30
 fixed-center = false
-
-background = ${colors.background}
-foreground = ${colors.foreground}
+background = ${xrdb:background}
+foreground = ${xrdb:foreground}
 
 line-size = 3
 line-color = #f00
@@ -148,7 +147,6 @@ label = %percentage:2%%
 type = internal/memory
 interval = 2
 format-prefix = " "
-#format-prefix-foreground = ${colors.foreground-alt}
 label = %gb_used% / %gb_total%
 
 [module/wlan]
@@ -161,11 +159,6 @@ format-connected-underline = #9f78e1
 label-connected = %essid%
 
 format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
-
 ramp-signal-0 = 
 ramp-signal-1 = 
 ramp-signal-2 = 

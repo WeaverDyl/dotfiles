@@ -8,10 +8,12 @@ gaps outer -2
 new_window pixel 2
 new_float normal
 hide_edge_borders none
+for_window [urgent=latest] focus
 
 # Basic Binds #
 bindsym $mod+Shift+q	kill
 bindsym $mod+Shift+e	exec "i3-nagbar -m 'Really exit i3?' -b 'Yes, exit i3'  'i3-msg exit'"
+bindsym $mod+Shift+r	exec i3-msg reload
 
 # Change focus
 bindsym $mod+Left focus left
@@ -47,6 +49,11 @@ bindsym $mod+space focus mode_toggle
 # toggle sticky
 bindsym $mod+Shift+s sticky toggle
 
+# i3 Scratchpad Binds #
+bindsym $mod+minus		scratchpad show
+bindsym $mod+Shift+minus	move scratchpad
+bindsym $mod+c			[con_mark="spotify"] scratchpad show
+
 # Workspace names
 set $ws1 1
 set $ws2 2
@@ -77,18 +84,9 @@ bindsym $mod+Ctrl+6 move container to workspace $ws6
 bindsym $mod+Ctrl+7 move container to workspace $ws7
 bindsym $mod+Ctrl+8 move container to workspace $ws8
 
-# switch to workspace with urgent window automatically
-for_window [urgent=latest] focus
-
 # Resize window
 bindsym $mod+r mode "resize"
-mode "resize" {
-        bindsym j resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
-        bindsym semicolon resize grow width 5 px or 5 ppt
-
-        # same bindings, but for the arrow keys
+mode "resize" {  
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
@@ -100,20 +98,12 @@ mode "resize" {
 }
 
 # pywal
-set $wallpaper "/home/dylanw/.config/wall.jpg"
+set $wallpaper "$HOME/.config/wall.jpg"
 exec --no-startup-id wal -i $wallpaper
 
 # Spotify
 for_window [class="Spotify"] mark "spotify", move scratchpad
 exec spotify
-
-# i3 Basic Binds #
-bindsym $mod+Shift+r		exec i3-msg reload; exec launch-polybar
-
-# i3 Scratchpad Binds #
-bindsym $mod+minus		scratchpad show
-bindsym $mod+Shift+minus	move scratchpad
-bindsym $mod+c			[con_mark="spotify"] scratchpad show
 
 # Autostart applications (move elsewhere eventually)
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

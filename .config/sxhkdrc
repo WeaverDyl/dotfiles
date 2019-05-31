@@ -2,23 +2,32 @@
 super + alt + 1
 	pkill -USR1 -x sxhkd
 
-# General
-super + grave
-	dmenuunicode
-super + 9
-	blurlock
-super + alt + r
-	$TERMINAL -e "bash -ic ranger"
+# Basics
 super + Return
 	$TERMINAL
 super + d
 	rofi -show run
+
+# General
+super + grave
+	dmenuunicode
+super + g
+	galculator
+super + 9
+	blurlock
+
+# Functions
 super + F2
-	firefox
+	$BROWSER
+super + F3
+	$TERMINAL -e "bash -ic ranger"
+
+
+# Recording / Screenshots
 @Print
-	i3-scrot -s	
-@super + Print
-	i3-scrot
+	imgur-screenshot
+#@super + Print
+#	ffrec
 
 # Media
 XF86AudioLowerVolume

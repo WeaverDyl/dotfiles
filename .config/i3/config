@@ -10,8 +10,8 @@ new_float normal
 hide_edge_borders none
 
 # Basic Binds #
-bindsym $mod+Shift+q		kill
-bindsym $mod+Shift+e		exec "i3-nagbar -m 'Really exit i3?' -b 'Yes, exit i3'  'i3-msg exit'"
+bindsym $mod+Shift+q	kill
+bindsym $mod+Shift+e	exec "i3-nagbar -m 'Really exit i3?' -b 'Yes, exit i3'  'i3-msg exit'"
 
 # Change focus
 bindsym $mod+Left focus left
@@ -37,11 +37,6 @@ bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
-
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -120,19 +115,16 @@ bindsym $mod+minus		scratchpad show
 bindsym $mod+Shift+minus	move scratchpad
 bindsym $mod+c			[con_mark="spotify"] scratchpad show
 
-# END OF i3
-
 # Autostart applications (move elsewhere eventually)
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id compton -b --config ~/.config/compton.conf
-exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit --no-icon
 exec_always --no-startup-id fix_xcursor
 
 # Open specific applications in floating mode
-for_window [class="Galculator"] floating enable border pixel 1 # keep, move elsewhere
+for_window [class="Galculator"] floating enable border pixel 1 
 for_window [class="GParted"] floating enable border normal
 for_window [class="Lightdm-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal

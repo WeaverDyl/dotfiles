@@ -232,12 +232,22 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/Pictures/wallpapers/wallhaven-769125.jpg" added="2019-05-30T18:13:34Z" modified="2019-05-30T18:13:34Z" visited="2019-05-30T18:13:34.765752Z">
+  <bookmark href="file:///home/dylanw/Pictures/wallpapers/wallhaven-769125.jpg" added="2019-05-30T18:13:34Z" modified="2019-05-30T18:13:34Z" visited="2019-05-30T18:13:34Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/jpeg"/>
         <bookmark:applications>
           <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-30T18:13:34Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Downloads/Practical%20Vim.pdf" added="2019-05-31T02:13:53Z" modified="2019-05-31T02:13:59Z" visited="2019-05-31T02:13:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-31T02:13:59Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>

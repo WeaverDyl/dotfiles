@@ -10,7 +10,7 @@ first-page-column=1:2
 page-right-to-left=false
 position-x=0.5
 position-y=0.013157894736842105
-time=1558592385
+time=1559273456
 jumplist=
 
 [/home/dylanw/Downloads/ans411btasp19.pdf]
@@ -23,5 +23,18 @@ first-page-column=1:2
 page-right-to-left=false
 position-x=0.5
 position-y=0.15402853124372112
-time=1558714353
+time=1559273455
 jumplist=
+
+[/home/dylanw/Downloads/Practical Vim.pdf]
+page=26
+offset=0
+zoom=1
+rotate=0
+pages-per-row=1
+first-page-column=1:2
+page-right-to-left=false
+position-x=0.65069444444444446
+position-y=0.078197202397182947
+time=1559274764
+jumplist=6 0.65069444444444446 0.019232654941319746 27 0.50020833333333337 0.081464982146122633 

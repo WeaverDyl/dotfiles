@@ -26,7 +26,6 @@ secondary = ${xrdb:foreground}
 alert = ${xrdb:foreground}
 
 [bar/main]
-;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 30
 fixed-center = false
@@ -37,7 +36,7 @@ line-size = 3
 line-color = #f00
 
 padding-left = 1
-padding-right = 2
+padding-right = 1
 
 module-margin-left = 1
 module-margin-right = 1
@@ -53,9 +52,6 @@ modules-center = i3
 modules-right = filesystem cpu memory wlan date powermenu
 
 separator = |
-
-tray-position = right
-tray-padding = 1 
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -132,10 +128,6 @@ label-visible-padding = ${self.label-focused-padding}
 label-urgent = %index%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
-
-; Separator in between workspaces
-; label-separator = |
-
 
 [module/cpu]
 type = internal/cpu
@@ -253,14 +245,7 @@ menu-3-0-exec = menu-open-0
 
 [settings]
 screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = false
 
 [global/wm]
 margin-top = 5
 margin-bottom = 5
-
-; vim:ft=dosini

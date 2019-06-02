@@ -165,21 +165,6 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///tmp/mozilla_dylanw0/default.Xdefaults.txt" added="2019-05-25T21:06:14Z" modified="2019-05-25T21:06:15Z" visited="2019-05-25T21:06:15Z">
-    <desc>Charset: UTF-8</desc>
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
-        <bookmark:groups>
-          <bookmark:group>Mousepad</bookmark:group>
-        </bookmark:groups>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-25T21:06:14Z" count="1"/>
-          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2019-05-25T21:06:15Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
   <bookmark href="file:///home/dylanw/2019-05-29-134115_1920x1080_scrot.png" added="2019-05-29T17:41:27Z" modified="2019-05-29T17:41:27Z" visited="2019-05-29T17:41:27Z">
     <info>
       <metadata owner="http://freedesktop.org">
@@ -265,7 +250,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/Pictures/imgur-2019_05_31-01:25:17.png" added="2019-05-31T05:26:09Z" modified="2019-05-31T05:26:09Z" visited="2019-05-31T05:26:10.124793Z">
+  <bookmark href="file:///home/dylanw/Pictures/imgur-2019_05_31-01:25:17.png" added="2019-05-31T05:26:09Z" modified="2019-05-31T05:26:09Z" visited="2019-05-31T05:26:10Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/png"/>
@@ -274,6 +259,59 @@
         </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-05-31T05:26:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Pictures/imgur-2019_06_01-00:54:02.png" added="2019-06-01T04:54:31Z" modified="2019-06-01T04:54:31Z" visited="2019-06-01T04:54:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-06-01T04:54:31Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_dylanw0/city.list.json.gz" added="2019-06-01T06:07:54Z" modified="2019-06-01T06:07:54Z" visited="2019-06-01T06:07:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/gzip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-01T06:07:54Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_dylanw0/city.list.json-1.gz" added="2019-06-01T06:09:45Z" modified="2019-06-01T06:09:45Z" visited="2019-06-01T06:09:46Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/gzip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-01T06:09:45Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Downloads/wallhaven-p8w8rj.jpg" added="2019-06-01T08:06:49Z" modified="2019-06-01T08:07:07Z" visited="2019-06-01T08:06:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-01T08:07:07Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/homepage/index.html" added="2019-06-01T08:25:28Z" modified="2019-06-01T08:25:55Z" visited="2019-06-01T08:25:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-extension-html"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-01T08:25:55Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>

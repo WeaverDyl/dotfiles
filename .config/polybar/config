@@ -58,7 +58,7 @@ cursor-scroll = ns-resize
 
 [module/weather]
 type = custom/script
-exec = "(curl -s wttr.in/Hagerstown\?format\="%l:+%C%20%t")"
+exec = "(curl -s wttr.in/Hagerstown?format\="%l:+%C%20%t")"
 interval = 1800
 
 [module/spotify]
@@ -76,7 +76,7 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
-label-mounted =  %percentage_used%%
+label-mounted =  %free%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 

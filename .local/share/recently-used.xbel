@@ -316,4 +316,44 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///tmp/mozilla_dylanw0/Juno-palenight.tar.xz" added="2019-06-02T18:44:29Z" modified="2019-06-02T18:44:29Z" visited="2019-06-02T18:44:29Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-02T18:44:29Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Downloads/Juno-palenight.tar.xz" added="2019-06-02T18:46:53Z" modified="2019-06-02T18:46:54Z" visited="2019-06-02T18:46:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-02T18:46:54Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Downloads/Juno-mirage.tar.xz" added="2019-06-02T18:49:41Z" modified="2019-06-02T18:49:42Z" visited="2019-06-02T18:49:42Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-02T18:49:42Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Downloads/Juno-ocean.tar.xz" added="2019-06-02T18:50:16Z" modified="2019-06-02T18:50:17Z" visited="2019-06-02T18:50:17.427575Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-02T18:50:17Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

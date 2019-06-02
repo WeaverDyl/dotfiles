@@ -52,6 +52,11 @@ bindsym $mod+Shift+s sticky toggle
 bindsym $mod+minus		scratchpad show
 bindsym $mod+Shift+minus	move scratchpad
 bindsym $mod+c			[con_mark="spotify"] scratchpad show
+bindsym $mod+x			[con_mark="discord"] scratchpad show
+
+# Scratchpad
+for_window [class="Spotify"] mark "spotify", move scratchpad
+for_window [class="discord"] mark "discord", move scratchpad
 
 # Workspace names
 set $ws1 1
@@ -100,10 +105,6 @@ mode "resize" {
 set $wallpaper "$HOME/.config/wall.jpg"
 exec --no-startup-id wal -i $wallpaper
 
-# Spotify
-for_window [class="Spotify"] mark "spotify", move scratchpad
-exec spotify
-
 # Autostart applications (move elsewhere eventually)
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id compton -b --config ~/.config/compton.conf
@@ -111,6 +112,8 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit --no-icon
 exec_always --no-startup-id fix_xcursor
+exec --no-startup-id spotify
+exec --no-startup-id discord
 
 # Open specific applications in floating mode
 for_window [class="Galculator"] floating enable border pixel 1 
@@ -127,7 +130,6 @@ for_window [class="(?i)System-config-printer.py"] floating enable border norma
 set_from_resource $fg foreground
 set_from_resource $bg background
 set_from_resource $fbg color8
-#		   	border bg text indicator
 client.focused          $fbg $fbg $bg $fbg
 client.focused_inactive $bg $bg $bg $bg
 client.unfocused        $bg $bg $bg $bg

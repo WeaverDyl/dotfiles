@@ -1,6 +1,9 @@
 # Reload sxhkd config
 super + alt + 1
 	pkill -USR1 -x sxhkd
+# Restart polybar
+super + shift + p
+	launch-polybar
 
 # Basics
 super + Return
@@ -23,11 +26,9 @@ super + F3
 	$TERMINAL -e "bash -ic ranger"
 
 
-# Recording / Screenshots
+# Screenshots
 @Print
 	imgur-screenshot
-#@super + Print
-#	ffrec
 
 # Media
 XF86AudioLowerVolume

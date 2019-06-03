@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Ping 8.8.8.8 once to determine if we're connected to the internet
+ping -q -c 1 8.8.8.8 > /dev/null || exit
+
+/usr/bin/notify-send "📰 Updating Newsboat RSS..."
+
+# Update Newsboat
+pgrep -x newsboat >/dev/null && /usr/bin/xdotool key --window "$(/usr/bin/xdotool search --name newsboat)" R && exit
+
+/usr/bin/notify-send "📰 Newsboat updated!"

@@ -346,12 +346,48 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/Downloads/Juno-ocean.tar.xz" added="2019-06-02T18:50:16Z" modified="2019-06-02T18:50:17Z" visited="2019-06-02T18:50:17.427575Z">
+  <bookmark href="file:///home/dylanw/Downloads/Juno-ocean.tar.xz" added="2019-06-02T18:50:16Z" modified="2019-06-02T18:50:17Z" visited="2019-06-02T18:50:17Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/x-xz-compressed-tar"/>
         <bookmark:applications>
           <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-02T18:50:17Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/bash-learning" added="2019-06-03T20:29:29Z" modified="2019-06-03T20:29:29Z" visited="2019-06-03T20:29:29Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2019-06-03T20:29:29Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Pictures/2019-05-30-174510_1920x1080_scrot.png" added="2019-06-03T22:04:41Z" modified="2019-06-03T22:04:41Z" visited="2019-06-03T22:04:41Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-06-03T22:04:41Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Pictures/imgur-2019_06_03-18:04:20.png" added="2019-06-03T22:04:50Z" modified="2019-06-03T22:04:50Z" visited="2019-06-03T22:04:51.053268Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-06-03T22:04:50Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

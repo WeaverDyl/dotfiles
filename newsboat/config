@@ -1,0 +1,16 @@
+# General
+confirm-exit yes
+history-limit 0
+
+# Colors
+color info 			default	default reverse
+color background		white	black
+color article			white 	black
+color listnormal 		yellow 	default
+color listnormal_unread 	white 	black
+color listfocus 		blue 	default reverse bold
+color listfocus_unread 		blue 	default reverse bold
+
+# Key binds:
+bind-key LEFT 	quit
+bind-key RIGHT	open

@@ -61,7 +61,7 @@ cursor-scroll = ns-resize
 inherit = bar/top
 bottom = true
 
-modules-left = newsboat 
+modules-left = newsboat gmail
 modules-center = 
 modules-right = filesystem cpu memory wlan battery 
 
@@ -73,13 +73,21 @@ interval = 1800
 [module/newsboat]
 type = custom/script
 format-prefix = " " 
-exec = newsboat -x print-unread | egrep -o "[0-9]+"
+exec = newsboat -x print-unread | grep -Eo "[0-9]+"
 label = %output% New
 interval = 300
 
+[module/gmail]
+type = custom/script
+format-prefix = " "
+exec = ~/.config/polybar/gmail/launch.py
+format-suffix = " unread emails"
+interval = 30
+click-left = xdg-open https://mail.google.com
+
 [module/spotify]
 type = custom/script
-exec = ~/.config/polybar/player-mpris-tail.py --icon-playing  --icon-paused  --icon-stopped  --icon-none  -f ' {:artist:t18:{artist}:}{:artist:: :}{:t20:{title}:} %{A1:~/.config/polybar/player-mpris-tail.py previous:}  %{A} %{A1:~/.config/polybar/player-mpris-tail.py play-pause:} {icon-reversed} %{A} %{A1:~/.config/polybar/player-mpris-tail.py next:}  %{A}'
+exec = ~/.config/polybar/spotify/player-mpris-tail.py --icon-playing  --icon-paused  --icon-stopped  --icon-none  -f ' {:artist:t18:{artist}:}{:artist:: :}{:t20:{title}:} %{A1:~/.config/polybar/spotify/player-mpris-tail.py previous:}  %{A} %{A1:~/.config/polybar/spotify/player-mpris-tail.py play-pause:} {icon-reversed} %{A} %{A1:~/.config/polybar/spotify/player-mpris-tail.py next:}  %{A}'
 tail = true
 label = %output%
 

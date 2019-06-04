@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Cronjob newsboat updater. I run this as a cronjob and the results are used in a polybar module labelled 'newsboat'.
-
 # Ping 8.8.8.8 once to determine if we're connected to the internet
 ping -q -c 1 8.8.8.8 > /dev/null || exit
 
 /usr/bin/notify-send "📰 Updating Newsboat RSS..."
 
-# Update Newsboat
-pgrep -x newsboat >/dev/null && /usr/bin/xdotool key --window "$(/usr/bin/xdotool search --name newsboat)" R && exit
+# Update Newsboat if it's open
+pgrep -x newsboat >/dev/null && /usr/bin/xdotool key --window "$(/usr/bin/xdotool search --name newsboat)" R  && exit
+
+/usr/bin/newsboat -x reload
 
 /usr/bin/notify-send "📰 Newsboat updated!"

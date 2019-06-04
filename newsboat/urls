@@ -18,6 +18,4 @@ feeds.arstechnica.com/arstechnica/technology-lab "technology"
 http://export.arxiv.org/rss/cs "computer science"
 
 # Space
-space.com/home/feed/site.xml "space"
 https://www.reddit.com/r/space/.rss?format=xml "space"
-www.universetoday.com/feed/ "space"

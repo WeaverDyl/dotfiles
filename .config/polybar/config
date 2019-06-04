@@ -61,7 +61,7 @@ cursor-scroll = ns-resize
 inherit = bar/top
 bottom = true
 
-modules-left = newsboat gmail
+modules-left = pacman newsboat gmail
 modules-center = 
 modules-right = filesystem cpu memory wlan battery 
 
@@ -69,6 +69,14 @@ modules-right = filesystem cpu memory wlan battery
 type = custom/script
 exec = "(curl -s wttr.in/Hagerstown?format\="%l:+%C%20%t")"
 interval = 1800
+
+[module/pacman]
+type = custom/script
+format-prefix = " "
+format-suffix = " updates"
+exec = ~/.local/bin/tools/pmupd
+label = %output%
+interval = 3600
 
 [module/newsboat]
 type = custom/script

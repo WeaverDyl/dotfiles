@@ -1,21 +1,14 @@
-# News
 http://feeds.bbci.co.uk/news/world/rss.xml "world news"
 https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/world/rss.xml "~NYT World News" "world news"
 
-# Politics
 http://rss.cnn.com/rss/cnn_allpolitics.rss "politics"
 
-# Military/etc...
 http://defence-blog.com/feed "military"
 https://www.thecipherbrief.com/feed "military"
 
-# Tech
+https://hnrss.org/frontpage "technology"
 feeds.feedburner.com/TechCrunch "technology"
 http://www.techmeme.com/feed.xml "technology"
 feeds.arstechnica.com/arstechnica/technology-lab "technology"
 
-# CS
-http://export.arxiv.org/rss/cs "computer science"
-
-# Space
 https://www.reddit.com/r/space/.rss?format=xml "space"

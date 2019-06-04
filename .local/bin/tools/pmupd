@@ -1,0 +1,6 @@
+#!/bin/bash
+
+let aur_updates=$(yay -Pn | grep -Eo "[0-9]+")
+let pacman_updates=$(pacman -Qu | wc -l)
+
+echo $(($aur_updates + $pacman_updates))

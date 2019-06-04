@@ -57,6 +57,11 @@ separator = |
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+[module/weather]
+type = custom/script
+exec = "(curl -s wttr.in/Hagerstown?format\="%l:+%C%20%t")"
+interval = 1800
+
 [module/newsboat]
 type = custom/script
 format-prefix = " " 

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Cronjob newsboat updater. I run this as a cronjob and the results are used in a polybar module labelled 'newsboat'.
+
 # Ping 8.8.8.8 once to determine if we're connected to the internet
 ping -q -c 1 8.8.8.8 > /dev/null || exit
 

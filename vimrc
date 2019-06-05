@@ -1,8 +1,11 @@
 syntax enable
+set number
 set termguicolors
 colorscheme onedark
 set laststatus=2
-
+set colorcolumn=80
+set guioptions-=m
+set guioptions-=T
 set nocompatible              " be iMproved, required
 filetype off                  " required
 

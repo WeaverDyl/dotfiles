@@ -4,10 +4,10 @@ ping -q -c 1 8.8.8.8 > /dev/null || exit
 
 /usr/bin/notify-send "📦 Checking for updates..."
 
-let aur_updates=$(yay -Pn | grep -Eo "[0-9]+")
-let pacman_updates=$(pacman -Qu | wc -l)
+aur_updates=$(yay -Pn)
+pacman_updates=$(pacman -Qu | wc -l)
 
-let total_updates=$(($aur_updates+$pacman_updates))
+total_updates=$(($aur_updates+$pacman_updates))
 echo $total_updates
 
 if [ $total_updates -eq "1" ]; then

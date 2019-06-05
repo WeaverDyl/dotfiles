@@ -8,10 +8,11 @@ aur_updates=$(yay -Pn)
 pacman_updates=$(pacman -Qu | wc -l)
 
 total_updates=$(($aur_updates+$pacman_updates))
-echo $total_updates
 
 if [ $total_updates -eq "1" ]; then
+	echo $total_updates update
 	/usr/bin/notify-send "📦 You've got $total_updates update!"
 else
+	echo $total_updates updates
 	/usr/bin/notify-send "📦 You've got $total_updates updates!"
 fi

@@ -73,7 +73,6 @@ interval = 1800
 [module/pacman]
 type = custom/script
 format-prefix = " "
-format-suffix = " updates"
 exec = ~/.local/bin/tools/pmupd
 label = %output%
 interval = 3600

@@ -415,4 +415,14 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/js-learning" added="2019-06-05T03:00:58Z" modified="2019-06-05T03:00:58Z" visited="2019-06-05T03:00:59.062362Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2019-06-05T03:00:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

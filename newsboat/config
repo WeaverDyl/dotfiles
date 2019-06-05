@@ -1,4 +1,7 @@
 # General
+auto-reload yes
+reload-time 15
+
 confirm-exit yes
 history-limit 0
 

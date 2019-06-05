@@ -1,17 +1,15 @@
 #!/bin/bash
 
+# newsboat automatically reloads every 15 mins when opened
+if pgrep -x "newsboat" > /dev/null; then
+    exit
+fi
+
 # Ping 8.8.8.8 once to determine if we're connected to the internet
 ping -q -c 1 8.8.8.8 > /dev/null || exit
 
 /usr/bin/notify-send "📰 Updating Newsboat RSS..."
 
-old_unread=$(/usr/bin/newsboat -x print-unread | grep -Eo "[0-9]+")
-
-# Update Newsboat if it's open
-pgrep -x newsboat >/dev/null && /usr/bin/xdotool key --window "$(/usr/bin/xdotool search --name newsboat)" R  && exit
-
 /usr/bin/newsboat -x reload
 
-new=$(($(/usr/bin/newsboat -x print-unread | grep -Eo "[0-9]+")-$old_unread))
-
-/usr/bin/notify-send "📰 Newsboat updated! $new articles added!"
+/usr/bin/notify-send "📰 Newsboat updated!"

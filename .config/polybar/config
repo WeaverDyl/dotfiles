@@ -81,9 +81,9 @@ interval = 3600
 [module/newsboat]
 type = custom/script
 format-prefix = " " 
-exec = ~/.local/bin/tools/refnews && newsboat -x print-unread | grep -Eo "[0-9]+"
+exec = ~/.local/bin/tools/refnews; newsboat -x print-unread | grep -Eo "[0-9]+"
 label = %output% New
-interval = 300
+interval = 900
 
 [module/gmail]
 type = custom/script
@@ -99,7 +99,7 @@ exec = ~/.config/polybar/spotify/player-mpris-tail.py --icon-playing  --icon-
 tail = true
 label = %output%
 
-[module/xwinRow]
+[module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
 

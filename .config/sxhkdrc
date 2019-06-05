@@ -25,7 +25,6 @@ super + F2
 super + F3
 	$TERMINAL -e "bash -ic ranger"
 
-
 # Screenshots
 @Print
 	imgur-screenshot

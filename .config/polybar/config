@@ -68,7 +68,7 @@ modules-right = filesystem cpu memory wlan battery
 [module/weather]
 type = custom/script
 exec = "(curl -s wttr.in/Hagerstown?format\="%l:+%C%20%t")"
-interval = 1800
+interval = 600
 
 [module/pacman]
 type = custom/script

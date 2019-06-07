@@ -40,11 +40,13 @@
 *.color14:	COLOR14
 *.color15:	COLOR15
 
+! Rofi settings
 rofi.color-window: BACKGROUND, FOREGROUND, FOREGROUND, FOREGROUND, COLOR1
 rofi.color-normal: BACKGROUND, FOREGROUND, BACKGROUND, FOREGROUND, COLOR1
 rofi.color-active: BACKGROUND, FOREGROUND, BACKGROUND, FOREGROUND, COLOR1
 rofi.color-urgent: BACKGROUND, FOREGROUND, BACKGROUND, FOREGROUND, COLOR1
 
+! Font settings
 Xft.dpi:       96
 Xft.antialias: true
 Xft.hinting:   true

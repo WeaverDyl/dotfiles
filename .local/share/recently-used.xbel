@@ -438,7 +438,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/Pictures/imgur-2019_06_05-13:34:54.png" added="2019-06-05T17:35:05Z" modified="2019-06-05T17:35:05Z" visited="2019-06-05T17:35:05.270897Z">
+  <bookmark href="file:///home/dylanw/Pictures/imgur-2019_06_05-13:34:54.png" added="2019-06-05T17:35:05Z" modified="2019-06-05T17:35:05Z" visited="2019-06-05T17:35:05Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/png"/>
@@ -447,6 +447,19 @@
         </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-06-05T17:35:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Pictures/imgur-2019_06_07-02:11:47.png" added="2019-06-07T06:12:07Z" modified="2019-06-07T06:12:07Z" visited="2019-06-07T06:12:08.076795Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-06-07T06:12:07Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

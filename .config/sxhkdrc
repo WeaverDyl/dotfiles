@@ -13,7 +13,7 @@ super + d
 
 # General
 super + grave
-	dmenuunicode
+	rofiunicode
 super + g
 	galculator
 super + 9

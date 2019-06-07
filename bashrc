@@ -147,4 +147,3 @@ source ~/.cache/wal/colors-tty.sh
 
 # aliases
 alias p="sudo pacman"
-

@@ -10,8 +10,6 @@ super + Return
 	$TERMINAL
 super + d
 	rofi -show run
-super + n
-	dmenu_recency
 
 # General
 super + grave

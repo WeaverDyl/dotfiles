@@ -451,7 +451,7 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/Pictures/imgur-2019_06_07-02:11:47.png" added="2019-06-07T06:12:07Z" modified="2019-06-07T06:12:07Z" visited="2019-06-07T06:12:08.076795Z">
+  <bookmark href="file:///home/dylanw/Pictures/imgur-2019_06_07-02:11:47.png" added="2019-06-07T06:12:07Z" modified="2019-06-07T06:12:07Z" visited="2019-06-07T06:12:08Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/png"/>
@@ -460,6 +460,26 @@
         </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-06-07T06:12:07Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/py.py" added="2019-06-08T00:30:15Z" modified="2019-06-08T00:30:15Z" visited="2019-06-08T00:30:16Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-python"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2019-06-08T00:30:15Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/xkcd37-Bot" added="2019-06-08T01:54:34Z" modified="2019-06-08T01:54:34Z" visited="2019-06-08T01:54:34.779812Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2019-06-08T01:54:34Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

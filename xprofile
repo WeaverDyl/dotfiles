@@ -1,5 +1,5 @@
 #!/bin/sh
 
-setbg & # Background
+setbgthm & # Background
 sxhkd & # Key binding
 launch-polybar & # Polybar

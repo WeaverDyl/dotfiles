@@ -101,17 +101,13 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-# pywal
-set $wallpaper "$HOME/.config/wall.jpg"
-exec --no-startup-id wal -i $wallpaper
-
-# Autostart applications (move elsewhere eventually)
+# Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id compton -b --config ~/.config/compton.conf
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id pamac-tray
 exec --no-startup-id clipit --no-icon
 exec_always --no-startup-id fix_xcursor
+
 exec --no-startup-id spotify
 exec --no-startup-id discord
 

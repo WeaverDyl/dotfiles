@@ -61,6 +61,8 @@ cursor-scroll = ns-resize
 inherit = bar/top
 bottom = true
 
+tray-position = center
+
 modules-left = pacman newsboat gmail
 modules-center = 
 modules-right = filesystem cpu memory wlan battery 

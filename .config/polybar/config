@@ -75,7 +75,7 @@ interval = 600
 [module/pacman]
 type = custom/script
 format-prefix = " "
-exec = ~/.local/bin/tools/pmupd
+exec = ~/.config/polybar/pmupd
 label = %output%
 interval = 3600
 

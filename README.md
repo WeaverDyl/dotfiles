@@ -1,3 +1,5 @@
 # My Cool Dotfiles
 
-What's linux?
+What it looks like so far:
+
+![](https://i.imgur.com/TnVgKjC.png)

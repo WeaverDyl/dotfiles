@@ -518,4 +518,24 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/dylanw/Pictures/imgur-2019_06_09-00:03:31.png" added="2019-06-09T04:04:11Z" modified="2019-06-09T04:04:11Z" visited="2019-06-09T04:04:11Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-09T04:04:11Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Pictures/imgur-2019_06_09-00:03:28.png" added="2019-06-09T04:04:49Z" modified="2019-06-09T04:04:49Z" visited="2019-06-09T04:04:50.123695Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-09T04:04:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

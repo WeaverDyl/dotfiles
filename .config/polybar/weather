@@ -1,0 +1,12 @@
+#!/bin/bash
+
+town=Hagerstown
+output=$(curl -s wttr.in/$town?format\="%l:+%C%20%t")
+error="500 Internal Server Error"
+
+if [[ $output =~ $error ]];
+then
+	echo "weather error"
+else
+	echo $output
+fi

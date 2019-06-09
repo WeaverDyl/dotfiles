@@ -69,7 +69,7 @@ modules-right = filesystem cpu memory wlan battery
 
 [module/weather]
 type = custom/script
-exec = "(curl -s wttr.in/Hagerstown?format\="%l:+%C%20%t")"
+exec = ~/.config/polybar/weather
 interval = 600
 
 [module/pacman]

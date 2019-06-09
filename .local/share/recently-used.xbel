@@ -72,12 +72,16 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/dotfiles/wallpapers/r9iFiev.jpg" added="2019-05-24T15:39:58Z" modified="2019-05-25T01:11:10Z" visited="2019-05-24T15:39:59Z">
+  <bookmark href="file:///home/dylanw/dotfiles/wallpapers/r9iFiev.jpg" added="2019-05-24T15:39:58Z" modified="2019-06-08T23:51:55Z" visited="2019-05-24T15:39:59Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
         <bookmark:applications>
           <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-05-25T01:11:10Z" count="4"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-06-08T23:51:55Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -474,12 +478,42 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/Documents/xkcd37-Bot" added="2019-06-08T01:54:34Z" modified="2019-06-08T01:54:34Z" visited="2019-06-08T01:54:34.779812Z">
+  <bookmark href="file:///home/dylanw/Documents/xkcd37-Bot" added="2019-06-08T01:54:34Z" modified="2019-06-08T01:54:34Z" visited="2019-06-08T01:54:34Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="inode/directory"/>
         <bookmark:applications>
           <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2019-06-08T01:54:34Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/Reddit-Phrase-Tracker" added="2019-06-08T05:39:02Z" modified="2019-06-08T21:17:12Z" visited="2019-06-08T05:39:02Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2019-06-08T21:17:12Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/reddit-upvote-tracker" added="2019-06-08T17:53:05Z" modified="2019-06-08T20:14:22Z" visited="2019-06-08T17:53:06Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2019-06-08T20:14:22Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/reddit-upvote-tracker/score_history.csv" added="2019-06-08T20:28:25Z" modified="2019-06-08T20:28:25Z" visited="2019-06-08T20:28:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-08T20:28:25Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

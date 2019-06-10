@@ -488,22 +488,22 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/Documents/Reddit-Phrase-Tracker" added="2019-06-08T05:39:02Z" modified="2019-06-08T21:17:12Z" visited="2019-06-08T05:39:02Z">
+  <bookmark href="file:///home/dylanw/Documents/Reddit-Phrase-Tracker" added="2019-06-08T05:39:02Z" modified="2019-06-09T17:51:24Z" visited="2019-06-08T05:39:02Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="inode/directory"/>
         <bookmark:applications>
-          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2019-06-08T21:17:12Z" count="3"/>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2019-06-09T17:51:24Z" count="4"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/Documents/reddit-upvote-tracker" added="2019-06-08T17:53:05Z" modified="2019-06-08T20:14:22Z" visited="2019-06-08T17:53:06Z">
+  <bookmark href="file:///home/dylanw/Documents/reddit-upvote-tracker" added="2019-06-08T17:53:05Z" modified="2019-06-10T04:06:42Z" visited="2019-06-08T17:53:06Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="inode/directory"/>
         <bookmark:applications>
-          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2019-06-08T20:14:22Z" count="3"/>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2019-06-10T04:06:42Z" count="4"/>
         </bookmark:applications>
       </metadata>
     </info>
@@ -528,12 +528,52 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/dylanw/Pictures/imgur-2019_06_09-00:03:28.png" added="2019-06-09T04:04:49Z" modified="2019-06-09T04:04:49Z" visited="2019-06-09T04:04:50.123695Z">
+  <bookmark href="file:///home/dylanw/Pictures/imgur-2019_06_09-00:03:28.png" added="2019-06-09T04:04:49Z" modified="2019-06-09T04:04:49Z" visited="2019-06-09T04:04:50Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/png"/>
         <bookmark:applications>
           <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-09T04:04:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/Reddit-Phrase-Tracker/comments.csv" added="2019-06-09T20:47:55Z" modified="2019-06-09T20:47:55Z" visited="2019-06-09T20:47:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-09T20:47:55Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/Reddit-Phrase-Tracker/matched_comments.csv" added="2019-06-10T01:32:07Z" modified="2019-06-10T03:43:09Z" visited="2019-06-10T01:32:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-10T03:43:09Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/Reddit-Phrase-Tracker/all_comments.csv" added="2019-06-10T01:32:12Z" modified="2019-06-10T03:43:04Z" visited="2019-06-10T01:32:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-10T03:43:04Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Downloads/file_show.png" added="2019-06-10T02:39:24Z" modified="2019-06-10T03:45:10Z" visited="2019-06-10T02:39:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-10T03:45:10Z" count="17"/>
         </bookmark:applications>
       </metadata>
     </info>

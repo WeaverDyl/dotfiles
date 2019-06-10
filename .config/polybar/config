@@ -63,7 +63,7 @@ bottom = true
 
 tray-position = center
 
-modules-left = pacman newsboat gmail
+modules-left = packageupdater newsboat gmail
 modules-center = 
 modules-right = filesystem cpu memory wlan battery 
 
@@ -72,10 +72,10 @@ type = custom/script
 exec = ~/.config/polybar/weather
 interval = 600
 
-[module/pacman]
+[module/packageupdater]
 type = custom/script
 format-prefix = " "
-exec = ~/.config/polybar/pmupd
+exec = ~/.config/polybar/pupd
 label = %output%
 interval = 3600
 

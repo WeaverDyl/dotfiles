@@ -18,7 +18,7 @@ try:
     creds = file.Storage(CREDENTIALS_PATH).get()
     if creds is not None:
         count = get_count(creds)
-        print(count)
+        print(count, ('unread emails' if count != 1 else 'unread email'))
     else:
         print('credentials not found', file=sys.stderr)
 except (errors.HttpError, ServerNotFoundError) as error:

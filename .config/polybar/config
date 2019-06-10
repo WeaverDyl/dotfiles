@@ -90,8 +90,6 @@ interval = 900
 type = custom/script
 format-prefix = " "
 exec = ~/.config/polybar/gmail/launch.py
-format-suffix = " unread emails"
-interval = 30
 click-left = xdg-open https://mail.google.com
 
 [module/spotify]

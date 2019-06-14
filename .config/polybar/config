@@ -194,11 +194,11 @@ ramp-signal-foreground = ${colors.foreground-alt}
 type = internal/date
 interval = 1
 
-date = " %m/%d/%Y (%a)"
+date =  %m/%d/%Y (%a)
 time =  %H:%M:%S
 
-format-prefix = 
 label = %date% %time%
+format = %{A1:gsimplecal:}<label>%{A}
 
 [module/alsa]
 type = internal/alsa

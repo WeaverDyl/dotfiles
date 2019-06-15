@@ -3,7 +3,7 @@
 printf "Starting upgrade..\\n"
 
 yay -Syu
-#launch-polybar
+# Reload polybar??
 
 printf "\\nUpgrade Finished. Press Enter to exit..\\n"
 read -r

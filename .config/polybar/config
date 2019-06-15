@@ -78,7 +78,7 @@ format-prefix = " "
 exec = ~/.config/polybar/pkgupgrd/pupd
 click-left = $TERMINAL -e ~/.config/polybar/pkgupgrd/upgrade
 label = %output%
-interval = 3600
+interval = 1800
 
 [module/newsboat]
 type = custom/script

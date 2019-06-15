@@ -4,7 +4,7 @@ ping -q -c 1 8.8.8.8 > /dev/null || exit
 
 /usr/bin/notify-send "📦 Checking for updates..."
 
-num_updates=$(yay -Pn)
+num_updates=$(yay -Qu | wc -l)
 
 if [ $num_updates -eq "1" ]; then
 	echo $num_updates update

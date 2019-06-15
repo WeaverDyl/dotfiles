@@ -62,7 +62,7 @@ XTerm*faceName:          Fixed
 XTerm*faceSize:          11
 XTerm*reverseVideo:      on
 XTerm*selectToClipboard: true
-XTerm*font:              Noto-Sans:pixelsize=9
+XTerm*font:              NerdFontComplete:pixelsize=9
 XTerm*name:		 termite
 
 Xcursor.theme: xcursor-breeze

@@ -5,7 +5,7 @@
 # Must have xclip installed to even show menu.
 xclip >/dev/null || exit
 
-chosen=$(grep -v "#" -h ~/.config/emoji ~/.config/fontawesome | rofi -dmenu -p "Symbols" -font "FiraCode 12")
+chosen=$(grep -v "#" -h ~/.local/bin/scripts/icons/emoji ~/.local/bin/scripts/icons/fontawesome | rofi -dmenu -p "Symbols" -font "FiraCode 12")
 
 [ "$chosen" != "" ] || exit
 

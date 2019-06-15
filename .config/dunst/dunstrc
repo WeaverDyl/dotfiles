@@ -2,7 +2,7 @@
     frame_width = 3
     frame_color = "#8ec07c"
     
-    font = Noto Sans 10
+    font = Source Code Pro 10
     
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -68,7 +68,7 @@
     # the top and down respectevly.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "0x4-25+25"
+    geometry = "0x4-5+35"
     
     # Shrink window if it's smaller than the width.  Will be ignored if
     # width is 0.
@@ -194,4 +194,4 @@
     frame_color = "#b7472a"
     background = "#222222"    
     foreground = "#b7472a"
-    timeout = 0
+    timeout = 10

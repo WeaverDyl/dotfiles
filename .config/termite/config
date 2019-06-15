@@ -5,7 +5,7 @@
 #cell_width_scale = 1.0
 clickable_url = tru
 #dynamic_title = true
-font = Source Code Pro 9
+font = SauceCodePro Nerd Font 9
 #fullscreen = true
 mouse_autohide = false
 #scroll_on_output = false

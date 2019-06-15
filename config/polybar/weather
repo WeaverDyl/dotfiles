@@ -1,0 +1,11 @@
+#!/bin/bash
+
+town=Hagerstown
+output=$(curl -s wttr.in/$town?format\="%l:+%C%20%t")
+
+if [[ ${output,,} =~ error|500|504 ]];
+then
+	echo "weather error"
+else
+	echo $output
+fi

@@ -1,0 +1,44 @@
+# Reload sxhkd config
+super + alt + 1
+	pkill -USR1 -x sxhkd
+# Restart polybar
+super + shift + p
+	launch-polybar
+
+# Basics
+super + Return
+	$TERMINAL
+super + d
+	rofi -show run
+
+# General
+super + grave
+	rofiunicode
+super + g
+	galculator
+super + 9
+	blurlock
+
+# Functions
+super + F2
+	$BROWSER
+super + F3
+	$TERMINAL -e "bash -ic ranger"
+
+# Screenshots
+@Print
+	imgur-screenshot
+
+# Media
+XF86AudioLowerVolume
+	amixer set Master 1%-
+XF86AudioRaiseVolume
+	amixer set Master 1%+
+XF86AudioMute
+	amixer -q sset Master,0 toggle
+XF86AudioPlay
+	playerctl play-pause
+XF86AudioNext
+	playerctl next
+XF86AudioPrev
+	playerctl previous

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+ping -q -c 1 8.8.8.8 > /dev/null || exit
+
+/usr/bin/notify-send "📦 Checking for updates..."
+
+num_updates=$(yay -Qu | wc -l)
+
+if [ $num_updates -eq "1" ]; then
+	echo $num_updates update
+	/usr/bin/notify-send "📦 You've got $num_updates update!"
+else
+	echo $num_updates updates
+	/usr/bin/notify-send "📦 You've got $num_updates updates!"
+fi

@@ -1,0 +1,2 @@
+#!/bin/bash
+wget -i $1 -P /$HOME/Pictures/wallpapers

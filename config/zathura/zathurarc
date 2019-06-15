@@ -1,0 +1,52 @@
+set default-bg "#21222b"
+set default-fg "#dadbd4"
+
+set tabbar-bg "#21222b"
+set tabbar-fg "#dadbd4"
+
+set tabbar-active-bg "#21222b"
+set tabbar-active-fg "#dadbd4"
+
+set recolor-darkcolor "#dadbd4"
+set recolor-lightcolor "#21222b"
+
+set statusbar-bg "#21222b"
+set statusbar-fg "#dadbd4"
+
+set inputbar-bg "#21222b"
+set inputbar-fg "#dadbd4"
+
+set completion-bg "#21222b"
+set completion-fg "#dadbd4"
+
+set completion-group-bg "#21222b"
+set completion-group-fg "#7D8284"
+
+set completion-highlight-bg "#21222b"
+set completion-highlight-fg "#dadbd4"
+
+set index-bg "#21222b"
+set index-fg "#dadbd4"
+
+set index-active-bg "#21222b"
+set index-active-fg "#dadbd4"
+
+set notification-bg "#21222b"
+set notification-fg "#dadbd4"
+
+set notification-error-bg "#797E81"
+set notification-error-fg "#dadbd4"
+
+set notification-warning-bg "#797E81"
+set notification-warning-fg "#dadbd4"
+
+set render-loading-bg "#21222b"
+set render-loading-fg "#dadbd4"
+
+set smooth-scroll true
+set window-title-home-tilde true
+set statusbar-basename true
+set selection-clipboard clipboard
+
+map r reload
+map R rotate

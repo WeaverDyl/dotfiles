@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/dylanw/Documents/Reddit-Phrase-Tracker" added="2019-06-10T15:18:32Z" modified="2019-06-10T20:58:30Z" visited="2019-06-10T15:18:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2019-06-10T20:58:30Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/Reddit-Phrase-Tracker/matched_comments.csv" added="2019-06-10T15:36:33Z" modified="2019-06-10T19:15:42Z" visited="2019-06-10T15:36:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-10T19:15:42Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/Reddit-Phrase-Tracker/all_comments.csv" added="2019-06-10T15:36:38Z" modified="2019-06-10T19:15:35Z" visited="2019-06-10T15:36:38Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/csv"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-10T19:15:35Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Downloads/file_show.png" added="2019-06-10T17:10:05Z" modified="2019-06-10T19:31:50Z" visited="2019-06-10T17:10:06Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2019-06-10T19:31:50Z" count="13"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/reddit-upvote-tracker" added="2019-06-10T19:41:27Z" modified="2019-06-10T19:41:27Z" visited="2019-06-10T19:41:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2019-06-10T19:41:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Documents/backup-initial" added="2019-06-10T20:23:34Z" modified="2019-06-10T20:23:34Z" visited="2019-06-10T20:23:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2019-06-10T20:23:34Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/dylanw/Pictures/imgur-2019_06_15-00:58:03.png" added="2019-06-15T04:59:09Z" modified="2019-06-15T04:59:09Z" visited="2019-06-15T04:59:10.050316Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.10 %u&apos;" modified="2019-06-15T04:59:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

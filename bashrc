@@ -138,8 +138,6 @@ ex ()
   fi
 }
 
-export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
-
 # Pywal
 (cat ~/.cache/wal/sequences &)
 cat ~/.cache/wal/sequences

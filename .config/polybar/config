@@ -82,7 +82,7 @@ interval = 3600
 [module/newsboat]
 type = custom/script
 format-prefix = " " 
-exec = ~/.local/bin/tools/refnews; newsboat -x print-unread | grep -Eo "[0-9]+"
+exec = refnews; newsboat -x print-unread | grep -Eo "[0-9]+"
 label = %output% new
 interval = 900
 

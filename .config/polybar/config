@@ -75,7 +75,8 @@ interval = 600
 [module/packageupdater]
 type = custom/script
 format-prefix = " "
-exec = ~/.config/polybar/pupd
+exec = ~/.config/polybar/pkgupgrd/pupd
+click-left = $TERMINAL -e ~/.config/polybar/pkgupgrd/upgrade
 label = %output%
 interval = 3600
 

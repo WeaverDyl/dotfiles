@@ -1,0 +1,9 @@
+#!/bin/sh
+
+printf "Starting upgrade..\\n"
+
+yay -Syu
+#launch-polybar
+
+printf "\\nUpgrade Finished. Press Enter to exit..\\n"
+read -r

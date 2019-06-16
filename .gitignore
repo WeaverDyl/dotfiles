@@ -1,3 +1,11 @@
 .netrwhist
+
 local/share/
+
 config/discord/
+
+newsboat/history.cmdline
+newsboat/history.search
+newsboat/cache.db
+newsboat/cache.db.lock
+newsboat/queue

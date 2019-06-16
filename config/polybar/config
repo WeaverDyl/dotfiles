@@ -61,7 +61,8 @@ cursor-scroll = ns-resize
 inherit = bar/top
 bottom = true
 
-tray-position = center
+# disabled until tray revamp in 3.4.0 (?)
+#tray-position = center
 
 modules-left = packageupdater newsboat gmail
 modules-center = 
@@ -165,14 +166,14 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 [module/cpu]
 type = internal/cpu
 interval = 1
-format-prefix = " "
-label = %percentage:2%%
+label =  %percentage:2%%
+format = %{A1:~/.config/polybar/cpu:}<label>%{A}
 
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
-label = %gb_used% / %gb_total%
+label =  %gb_used% / %gb_total%
+format = %{A1:~/.config/polybar/memory:}<label>%{A}
 
 [module/wlan]
 type = internal/network

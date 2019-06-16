@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ps axch -o cmd,%mem --sort=-%mem | sed 's/$/% of Memory/g' | rofi -dmenu -i -p 'Memory Usage' -font 'FiraCode 12'

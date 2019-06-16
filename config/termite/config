@@ -41,12 +41,6 @@ foreground = #e1e1e1
 #foreground_bold = #ffffff
 background = #21222b
 
-# 20% background transparency (requires a compositor)
-#background = rgba(63, 63, 63, 0.8)
-
-# If unset, will reverse foreground and background
-highlight = #2f2f2f
-
 # Colors from color0 to color254 can be set
 color0 = #21222b
 color1 = #797e71
@@ -54,7 +48,7 @@ color2 = #7d8284
 color3 = #898c8e
 color4 = #a0a29d
 color5 = #b4b6ad
-color6 = #bec0b6
+color6 = #bec0b5
 color7 = #e1e1e1
 color8 = #989994
 color9 = #797e81

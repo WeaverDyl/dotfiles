@@ -14,8 +14,16 @@ super + d
 # General
 super + grave
 	rofiunicode
-super + g
+super + a
+	$TERMINAL -e calcurse
+super + b
+	$TERMINAL -e newsboat
+super + c
 	galculator
+super + g
+	gimp
+super + i
+	$TERMINAL -e htop
 super + 9
 	blurlock
 

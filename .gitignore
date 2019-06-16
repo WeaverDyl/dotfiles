@@ -9,3 +9,6 @@ newsboat/history.search
 newsboat/cache.db
 newsboat/cache.db.lock
 newsboat/queue
+
+config/ranger/__pycache__/
+config/ranger/plugins/__pycache__/

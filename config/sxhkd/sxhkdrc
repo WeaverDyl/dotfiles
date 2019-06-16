@@ -23,7 +23,7 @@ super + 9
 super + F2
 	$BROWSER
 super + F3
-	$TERMINAL -e "bash -ic ranger"
+	$TERMINAL -e ranger
 
 # Screenshots
 @Print

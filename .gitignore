@@ -4,11 +4,11 @@ local/share/
 
 config/discord/
 
-newsboat/history.cmdline
-newsboat/history.search
-newsboat/cache.db
-newsboat/cache.db.lock
-newsboat/queue
+config/newsboat/history.cmdline
+config/newsboat/history.search
+config/newsboat/cache.db
+config/newsboat/cache.db.lock
+config/newsboat/queue
 
 config/ranger/__pycache__/
 config/ranger/plugins/__pycache__/

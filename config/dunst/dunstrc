@@ -1,8 +1,7 @@
 [global]
     frame_width = 3
     frame_color = "#8ec07c"
-    
-    font = Source Code Pro 10
+    font = Fira Code 10
     
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -54,7 +53,6 @@
     
     # Ignore newlines '\n' in notifications.
     ignore_newline = no
-    
     
     # The geometry of the window:
     #   [{width}]x{height}[+/-{x}+/-{y}]
@@ -122,7 +120,6 @@
     separator_height = 2
     
     # Padding between text and separator.
-    # padding = 8
     padding = 8
     
     # Horizontal padding.
@@ -136,15 +133,11 @@
     #  * anything else will be interpreted as a X color.
     separator_color = frame 
     
-    # Print a notification on startup.
-    # This is mainly for error detection, since dbus (re-)starts dunst
-    # automatically after a crash.
     startup_notification = false
     
     # dmenu path.
     dmenu = /usr/bin/dmenu -p dunst:
     
-    # Browser for opening urls in context menu.
     browser = firefox
 
     # Align icons left/right/off
@@ -153,31 +146,19 @@
     # Paths to default icons.
     icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
 
-    # Limit icons size.
     max_icon_size=128
 
 [shortcuts]
-
     # Shortcuts are specified as [modifier+][modifier+]...key
     # Available modifiers are "ctrl", "mod1" (the alt-key), "mod2",
     # "mod3" and "mod4" (windows-key).
-    # Xev might be helpful to find names for keys.
-    
-    # Close notification.
     close = mod1+space
-    
-    # Close all notifications.
-    # close_all = ctrl+shift+space
     close_all = ctrl+mod1+space
 
-    # Redisplay last message(s).
-    # On the US keyboard layout "grave" is normally above TAB and left
-    # of "1".
     history = ctrl+mod4+h 
-    
-    # Context menu.
     context = ctrl+mod1+c
 
+# Message Color Settings
 [urgency_low]
     frame_color = "#989994"
     background = "#222222"

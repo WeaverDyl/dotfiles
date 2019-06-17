@@ -14,9 +14,7 @@ super + d
 # General
 super + grave
 	rofiunicode
-super + a
-	$TERMINAL -e calcurse
-super + b
+super + n
 	$TERMINAL -e newsboat
 super + c
 	galculator

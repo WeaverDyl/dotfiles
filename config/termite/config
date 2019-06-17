@@ -1,44 +1,18 @@
 [options]
-#allow_bold = true
-#bold_is_bright = true
-#cell_height_scale = 1.0
-#cell_width_scale = 1.0
-clickable_url = tru
-#dynamic_title = true
 font = SauceCodePro Nerd Font 9
-#fullscreen = true
+clickable_url = true
 mouse_autohide = false
 #scroll_on_output = false
-#scroll_on_keystroke = true
+scroll_on_keystroke = true
 scrollback_lines = 10000
-#search_wrap = true
-#urgent_on_bell = true
-#hyperlinks = false
-
-#browser = xdg-open
-
-# "system", "on" or "off"
-cursor_blink = system
-
-# "block", "underline" or "ibeam"
-cursor_shape = block
-
-# Hide links that are no longer valid in url select overlay mode
-#filter_unmatched_urls = true
-
-# Emit escape sequences for extra modified keys
-#modify_other_keys = false
-
+search_wrap = true
+hyperlinks = true
+cursor_blink = system # "system", "on" or "off"
+cursor_shape = block # "block", "underline" or "ibeam"
 scrollbar = off
 
 [colors]
-# If both of these are unset, cursor falls back to the foreground color,
-# and cursor_foreground falls back to the background color.
-#cursor = #dcdccc
-#cursor_foreground = #dcdccc
-
 foreground = #e1e1e1
-#foreground_bold = #ffffff
 background = #21222b
 
 # Colors from color0 to color254 can be set

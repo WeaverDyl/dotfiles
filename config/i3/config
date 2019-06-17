@@ -1,14 +1,17 @@
 # Basic Settings #
 set $mod Mod4
-smart_gaps on
+
+smart_gaps on # i3-gaps settings
 smart_borders on
 gaps inner 14
 gaps outer -2
-new_window pixel 2
-new_float normal
+
+default_border pixel 2 # Set border 'thickness'
+default_floating_border pixel 2
+
 hide_edge_borders none
 for_window [urgent=latest] focus
-workspace_auto_back_and_forth yes
+workspace_auto_back_and_forth yes # Keying/pressing current workspace moves you to previous workspace
 font pango:FiraCode 12px
 
 # Basic Binds #
@@ -29,17 +32,12 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split orientation
-bindsym $mod+h split h;exec notify-send 'tile horizontally'
-bindsym $mod+v split v;exec notify-send 'tile vertically'
-bindsym $mod+q split toggle
+bindsym $mod+h split h; exec notify-send 'tile horizontally'
+bindsym $mod+v split v; exec notify-send 'tile vertically'
 
-# toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
-
-# change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
 # toggle sticky

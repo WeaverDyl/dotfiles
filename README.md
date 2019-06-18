@@ -6,13 +6,21 @@ What it looks like so far:
 
 ## My current setup:
 **Shell**: Bash
-**terminal emulator**: Termite
+
+**Terminal emulator**: Termite
+
 **WM**: i3-gaps
-**Bar**: Polybar
+
+**Status bar**: Polybar
+
 **Text editor**: Vim
+
 **File manager**: Ranger
+
 **Music**: Spotify
+
 **Browser**: Firefox
+
 **Color theme generation**: Pywal
 
 ## Buy My Wares

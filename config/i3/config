@@ -6,8 +6,8 @@ smart_borders on
 gaps inner 14
 gaps outer -2
 
-new_window pixel 2 # Set border 'thickness'
-new_float pixel 2
+default_border pixel 2 
+default_floating_border normal 2
 
 hide_edge_borders none
 for_window [urgent=latest] focus

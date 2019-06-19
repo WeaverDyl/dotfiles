@@ -45,7 +45,7 @@ module-margin-right = 1
 font-0 = "Fira Code:size=10;3"
 font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=10;3"
 font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=10;3"
-font-3 = "Font Awesome 5 Brands:pixelsize=12;3"
+font-3 = "Font Awesome 5 Brands:pixelsize=10;3"
 font-4 = "NotoEmoji Nerd Font Mono:style=Book:size=10;3"
 
 modules-left =  spotify alsa
@@ -62,7 +62,7 @@ inherit = bar/top
 bottom = true
 
 # disabled until tray revamp in 3.4.0 (?)
-#tray-position = center
+tray-position = center
 
 modules-left = packageupdater newsboat gmail
 modules-center = 
@@ -177,20 +177,12 @@ format = %{A1:~/.config/polybar/memory:}<label>%{A}
 
 [module/wlan]
 type = internal/network
-interface = net1
+interface = wlp6s0
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
+format-connected =  <label-connected>
 label-connected = %essid%
-
-format-disconnected =
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground-alt}
+format-disconnected =  No Internet
 
 [module/date]
 type = internal/date
@@ -219,29 +211,28 @@ adapter = ADP1
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+format-charging-underline =
 
 format-discharging = <animation-discharging> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
+format-discharging-underline = 
 
-format-full-prefix = " "
+format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${self.format-charging-underline}
+format-full-underline = 
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
-
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-3 = 
+animation-discharging-4 = 
 animation-discharging-foreground = ${colors.foreground-alt}
 animation-discharging-framerate = 750
 

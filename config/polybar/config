@@ -196,13 +196,13 @@ format = %{A1:gsimplecal:}<label>%{A}
 
 [module/alsa]
 type = internal/alsa
-
-format-volum 31223= <label-volume> <bar-volume>
-label-volume =  %percentage%% 
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+label-muted =  0% 
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage%% 
 label-volume-foreground = ${root.foreground}
-
-# Because I can't figure out how to disable left clicks lol
-label-muted =  %percentage%% 
 
 [module/battery]
 type = internal/battery

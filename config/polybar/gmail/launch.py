@@ -22,7 +22,7 @@ try:
     else:
         print('credentials not found', file=sys.stderr)
 except (errors.HttpError, ServerNotFoundError) as error:
-    print(error, file=sys.stderr)
+    print("No Internet", file=sys.stderr)
 except client.AccessTokenRefreshError:
     print('revoked/expired credentials', file=sys.stderr)
 

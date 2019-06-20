@@ -89,8 +89,8 @@ interval = 1800
 [module/newsboat]
 type = custom/script
 format-prefix = " " 
-exec = refnews; newsboat -x print-unread | grep -Eo "[0-9]+"
-label = %output% new
+exec = ~/.config/polybar/refnews
+label = %output%
 interval = 900
 
 [module/gmail]

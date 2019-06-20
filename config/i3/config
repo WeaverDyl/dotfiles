@@ -100,14 +100,15 @@ mode "resize" {
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-#exec --no-startup-id compton -b --config ~/.config/compton.conf
+exec --no-startup-id compton -b --config ~/.config/compton.conf
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id clipit --no-icon
 exec_always --no-startup-id fix_xcursor
-
+exec --no-startup-id nm-applet
 exec --no-startup-id spotify
 exec --no-startup-id discord
 exec --no-startup-id keepassxc
+exec --no-startup-id dropbox
 
 # Open specific applications in floating mode
 for_window [class="Galculator"] floating enable border pixel 1 
@@ -118,10 +119,10 @@ for_window [class="Manjaro Settings Manager"] floating enable border normal
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
-for_window [class="(?i)System-config-printer.py"] floating enable border norma
+for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="vlc"] floating enable
 for_window [class="Sxiv"] floating enable border pixel 3
-
+for_window [class="keepassxc"] floating enable
 # Coloring
 set_from_resource $fg foreground
 set_from_resource $bg background

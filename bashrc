@@ -72,7 +72,8 @@ if ${use_color} ; then
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
-		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
+		PROMPT_COMMAND='PS1X=$(p="${PWD#${HOME}}"; [ "${PWD}" != "${p}" ] && printf "~";IFS=/; for q in ${p:1}; do printf /${q:0:1}; done; printf "${q:0}")'
+		PS1='\[\033[01;31m\][\[\033[01;36m\]\t\[\033[01;31m\]] \[\033[01;36m\]${PS1X} \[\033[01;31m\]>\[\033[00m\] '	
 	fi
 
 	alias ls='ls --color=auto'

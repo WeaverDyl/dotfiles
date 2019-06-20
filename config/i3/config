@@ -48,10 +48,12 @@ bindsym $mod+minus		scratchpad show
 bindsym $mod+Shift+minus	move scratchpad
 bindsym $mod+s			[con_mark="spotify"] scratchpad show
 bindsym $mod+x			[con_mark="discord"] scratchpad show
+bindsym $mod+z			[con_mark="keepass"] scratchpad show
 
 # Scratchpad
 for_window [class="Spotify"] mark "spotify", move scratchpad
 for_window [class="discord"] mark "discord", move scratchpad
+for_window [class="keepassxc"] mark "keepass", move scratchpad
 
 # Workspace names
 set $ws1 "1: "
@@ -105,6 +107,7 @@ exec_always --no-startup-id fix_xcursor
 
 exec --no-startup-id spotify
 exec --no-startup-id discord
+exec --no-startup-id keepassxc
 
 # Open specific applications in floating mode
 for_window [class="Galculator"] floating enable border pixel 1 

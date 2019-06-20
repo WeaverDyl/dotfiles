@@ -37,9 +37,9 @@ super + F3
 
 # Media
 XF86AudioLowerVolume
-	amixer set Master 1%-
+	amixer sset Master unmute && amixer set Master 2%-
 XF86AudioRaiseVolume
-	amixer set Master 1%+
+	amixer sset Master unmute && amixer set Master 2%+
 XF86AudioMute
 	amixer -q sset Master,0 toggle
 XF86AudioPlay

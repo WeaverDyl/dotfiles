@@ -7,7 +7,10 @@ BAT_FULL=$BATPATH/charge_full
 BAT_NOW=$BATPATH/charge_now
 bf=$(cat $BAT_FULL)
 bn=$(cat $BAT_NOW)
-if [ $(( 100 * $bn / $bf )) -lt 50 ]
+
+# AND IF NOT ALREADY CHARGING
+status=$(cat /sys/class/power_supply/BAT0/status)
+if [ $(( 100 * $bn / $bf )) -lt 25 ] && [ $status != "Charging" ];
 then
     notify-send -u critical "Battery Alert" "Battery Level Low -- Charge Battery Soon"
 fi

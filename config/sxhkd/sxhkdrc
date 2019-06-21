@@ -23,7 +23,7 @@ super + g
 super + i
 	$TERMINAL -e htop
 super + 9
-	blurlock
+	betterlockscreen -l
 
 # Functions
 super + F2

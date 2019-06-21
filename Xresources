@@ -2,7 +2,7 @@
 
 #define FOREGROUND #e1e1e1
 #define BACKGROUND #21222b
-#define BG_ALPHA   #9921222b
+#define BG_ALPHA   #cc21222b
 
 #define COLOR0 	#21222b
 #define COLOR1 	#797e71

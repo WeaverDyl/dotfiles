@@ -8,7 +8,6 @@ BAT_NOW=$BATPATH/charge_now
 bf=$(cat $BAT_FULL)
 bn=$(cat $BAT_NOW)
 
-# AND IF NOT ALREADY CHARGING
 status=$(cat /sys/class/power_supply/BAT0/status)
 if [ $(( 100 * $bn / $bf )) -le 25 ] && [ $status != "Charging" ];
 then

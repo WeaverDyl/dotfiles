@@ -18,7 +18,7 @@
 
 [colors]
 background = ${xrdb:background}
-background_transparent = ${xrdb:bg_alpha}
+background_transparent = ${xrdb:background}
 background-alt = ${xrdb:color2}
 foreground = ${xrdb:foreground}
 foreground-alt = ${xrdb:foreground}

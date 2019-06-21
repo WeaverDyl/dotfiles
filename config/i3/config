@@ -100,7 +100,7 @@ mode "resize" {
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id compton -b --config ~/.config/compton.conf
+#exec --no-startup-id compton -b --config ~/.config/compton.conf
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id clipit --no-icon
 exec_always --no-startup-id fix_xcursor

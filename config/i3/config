@@ -108,6 +108,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id spotify
 exec --no-startup-id discord
 exec --no-startup-id keepassxc
+exec --no-startup-id fluxgui
 exec --no-startup-id dropbox
 
 # Open specific applications in floating mode

@@ -84,7 +84,7 @@ format-prefix = " "
 exec = ~/.config/polybar/pkgupgrd/pupd
 click-left = $TERMINAL -e ~/.config/polybar/pkgupgrd/upgrade
 label = %output%
-interval = 1800
+interval = 10800
 
 [module/newsboat]
 type = custom/script
@@ -204,7 +204,7 @@ type = internal/alsa
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
-label-muted =  0% 
+label-muted =  Muted 
 format-volume = <ramp-volume> <label-volume>
 label-volume = %percentage%% 
 label-volume-foreground = ${root.foreground}

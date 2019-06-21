@@ -2,4 +2,12 @@
 
 setbgthm & # Background
 sxhkd & # Key binding
+
+# A cheap way to not launch polybar until user is connected to the internet.
+# All this does is prevent polybar from launching and half of the modules
+# giving a connection error, forcing the user to reload polybar.
+while true;
+do
+    ping -q -c 1 8.8.8.8 > /dev/null && break;
+done
 launch-polybar & # Polybar

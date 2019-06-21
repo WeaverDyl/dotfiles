@@ -1,11 +1,13 @@
 #!/bin/bash
 
+ping -q -c 1 8.8.8.8 > /dev/null 2>&1 || { echo "No Internet"; exit; }
+
 town=Hagerstown
-output=$(curl -s wttr.in/$town?format\="%l:+%C%20%t")
+output=$(curl -s wttr.in/$town?format\="%C%20%t" | sed -e "s/\b\(.\)/\u\1/g")
 
 if [[ ${output,,} =~ error|500|504 ]];
 then
-	echo "weather error"
+	echo "Weather Error"
 else
 	echo $output
 fi

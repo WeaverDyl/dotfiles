@@ -1,5 +1,19 @@
 let mapleader = ','
 
+" Basic settings
+filetype plugin indent on
+set relativenumber
+colorscheme onedark
+set termguicolors
+set tabstop=4
+set shiftwidth=4
+set laststatus=2
+set guicursor=					" fix block cursor neovim
+set clipboard=unnamedplus     	" yank to system clipboard too
+set nocompatible              	" be iMproved, required
+syntax on
+filetype plugin indent on
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
@@ -12,20 +26,8 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-set relativenumber
-colorscheme onedark
-set termguicolors
-set tabstop=4
-set shiftwidth=4
-set laststatus=2
-set guicursor=					" fix block cursor neovim
-set clipboard=unnamedplus     	" yank to system clipboard too
-set nocompatible              	" be iMproved, required
-syntax on
-filetype plugin on              
+Plugin 'w0rp/ale'
+call vundle#end()
 
 " Plugin Settings
 let g:airline_powerline_fonts = 1
@@ -38,15 +40,15 @@ let g:DevIconsEnableFoldersOpenClose = 1
 " Nerd tree
 let NERDTreeShowHidden=1 " shows hidden files
 autocmd FileType nerdtree nmap <buffer> <left> u
-autocmd FileType nerdtree nmap <buffer> <right> <cr> 
+autocmd FileType nerdtree nmap <buffer> <right> <cr>
 let NERDTreeMapOpenInTab='<C-z>' " remap t to ctrl-a
 noremap <C-a> :NERDTreeTabsToggle<cr>
 noremap! <C-a> :NERDTreeTabsToggle<cr>
 
-" More general settings
+" General mappings
 " Swap lines
-:nnoremap <C-Up> <Up>"add"ap<Up>
-:nnoremap <C-Down> "add"ap
+nnoremap <C-Down> "add"ap
+nnoremap <C-Up> <Up>"add"ap<Up>
 
 " Tab mappings
 noremap <C-c> :tabnext<cr>

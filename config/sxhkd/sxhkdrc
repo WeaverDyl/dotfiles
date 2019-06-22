@@ -22,6 +22,8 @@ super + g
 	gimp
 super + i
 	$TERMINAL -e htop
+super + t
+	$TERMINAL -e calcurse
 super + 9
 	betterlockscreen -l
 

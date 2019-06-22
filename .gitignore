@@ -2,11 +2,11 @@
 
 local/share/
 
-config/calcurse/apts
-config/calcurse/hooks
-config/calcurse/keys
-config/calcurse/notes
-config/calcurse/todo
+calcurse/apts
+calcurse/hooks
+calcurse/keys
+calcurse/notes
+calcurse/todo
 config/discord/
 config/newsboat/history.cmdline
 config/newsboat/history.search

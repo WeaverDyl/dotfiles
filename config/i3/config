@@ -6,7 +6,7 @@ smart_borders on
 gaps inner 14
 gaps outer -2
 
-default_border pixel 2 
+default_border pixel 2
 default_floating_border normal 2
 
 hide_edge_borders none
@@ -87,7 +87,7 @@ bindsym $mod+Ctrl+8 move container to workspace $ws8
 
 # Resize window
 bindsym $mod+r mode "resize"
-mode "resize" {  
+mode "resize" {
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
@@ -112,7 +112,7 @@ exec --no-startup-id fluxgui
 exec --no-startup-id dropbox
 
 # Open specific applications in floating mode
-for_window [class="Galculator"] floating enable border pixel 1 
+for_window [class="Galculator"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
 for_window [class="Lightdm-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal

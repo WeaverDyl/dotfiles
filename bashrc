@@ -145,4 +145,5 @@ cat ~/.cache/wal/sequences
 source ~/.cache/wal/colors-tty.sh
 
 # aliases
+alias vim="nvim"
 alias p="sudo pacman"

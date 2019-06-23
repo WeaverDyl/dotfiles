@@ -41,7 +41,8 @@ let g:DevIconsEnableFoldersOpenClose = 1
 let NERDTreeShowHidden=1 " shows hidden files
 autocmd FileType nerdtree nmap <buffer> <left> u
 autocmd FileType nerdtree nmap <buffer> <right> <cr>
-let NERDTreeMapOpenInTab='<C-z>' " remap t to ctrl-a
+map <C-z> <Nop>
+let NERDTreeMapOpenInTab='<C-z>' " remap t to ctrl-z
 noremap <C-a> :NERDTreeTabsToggle<cr>
 noremap! <C-a> :NERDTreeTabsToggle<cr>
 

@@ -2,6 +2,7 @@
 
 local/share/
 
+calcurse/.calcurse.pid
 calcurse/apts
 calcurse/hooks
 calcurse/keys

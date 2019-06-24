@@ -27,9 +27,15 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'w0rp/ale'
+Plugin 'alvan/vim-closetag'
 call vundle#end()
 
 " Plugin Settings
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#show_splits = 0
+let g:airline#extensions#tabline#tab_nr_type = 1
 let g:airline_powerline_fonts = 1
 let g:NERDTreeIndicatorMapCustom = {
 	\ "Modified"	:	""
@@ -53,9 +59,9 @@ nnoremap <C-Up> <Up>"add"ap<Up>
 
 " Tab mappings
 noremap <C-c> :tabnext<cr>
-noremap! <C-c> :tabnext<cr>
+noremap! <C-c> <Esc>:tabnext<cr>
 noremap <C-x> :tabprevious<cr>
-noremap! <C-x> :tabprevious<cr>
+noremap! <C-x> <Esc>:tabprevious<cr>
 
 " Update programs when their configs are changed
 autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd

@@ -68,9 +68,7 @@ noremap <C-x> :tabprevious<cr>
 noremap! <C-x> <Esc>:tabprevious<cr>
 
 noremap <leader>n :bprevious<cr>
-noremap! <leader>n <Esc>:bprevious<cr>
 noremap <leader>m :bnext<cr>
-noremap! <leader>m <Esc>:bnext<cr>
 
 " Update programs when their configs are changed
 autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd

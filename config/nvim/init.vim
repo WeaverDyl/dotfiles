@@ -11,6 +11,7 @@ set laststatus=2
 set guicursor=
 set clipboard=unnamedplus     	" yank to system clipboard too
 set nocompatible              	" be iMproved, required
+set autoindent
 syntax on
 filetype plugin indent on
 
@@ -28,6 +29,7 @@ Plugin 'ryanoasis/vim-devicons'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'w0rp/ale'
 Plugin 'alvan/vim-closetag'
+Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 
 " Plugin Settings

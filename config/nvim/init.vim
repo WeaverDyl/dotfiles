@@ -8,7 +8,7 @@ set termguicolors
 set tabstop=4
 set shiftwidth=4
 set laststatus=2
-set guicursor=					" fix block cursor neovim
+set guicursor=
 set clipboard=unnamedplus     	" yank to system clipboard too
 set nocompatible              	" be iMproved, required
 syntax on
@@ -36,6 +36,7 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#show_splits = 0
 let g:airline#extensions#tabline#tab_nr_type = 1
+let g:airline#extensions#tabline#buffer_nr_type = 1
 let g:airline#extensions#tabline#show_close_button = 0
 let g:airline_powerline_fonts = 1
 let g:NERDTreeIndicatorMapCustom = {
@@ -63,6 +64,11 @@ noremap <C-c> :tabnext<cr>
 noremap! <C-c> <Esc>:tabnext<cr>
 noremap <C-x> :tabprevious<cr>
 noremap! <C-x> <Esc>:tabprevious<cr>
+
+noremap <leader>n :bprevious<cr>
+noremap! <leader>n <Esc>:bprevious<cr>
+noremap <leader>m :bnext<cr>
+noremap! <leader>m <Esc>:bnext<cr>
 
 " Update programs when their configs are changed
 autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd

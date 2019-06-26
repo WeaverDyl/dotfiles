@@ -30,6 +30,7 @@ Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'w0rp/ale'
 Plugin 'alvan/vim-closetag'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'ycm-core/YouCompleteMe'
 call vundle#end()
 
 " Plugin Settings

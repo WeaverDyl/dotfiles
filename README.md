@@ -13,7 +13,7 @@ What it looks like so far:
 
 **Status bar**: Polybar
 
-**Text editor**: Vim
+**Text editor**: Neovim
 
 **File manager**: Ranger
 

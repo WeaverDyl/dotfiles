@@ -140,8 +140,8 @@ ex ()
 }
 
 upload() {
-	if [ -z "$1" ]; then
-		echo "You must give a filename as an argument"
+	if [ $# -ne 1 ]; then
+		echo "You must give a single filename as an argument"
 	else
 		link=$(curl -s -F"file=@$1" http://0x0.st)
 		if [ "$link" ]; then
@@ -158,11 +158,16 @@ upload() {
 }
 
 shorten() {
-	if [ -z "$1" ]; then
-		echo "You must give a URL as an argument"
+	if [ $# -ne 1 ]; then
+		echo "You must give a single URL as an argument"
 	else
+		# Add "http://" if not already present to prevent errors
+		if [[ ! ${1,,} =~ ^https?://.+$ ]]; then
+			set -- "http://$1"
+		fi
 		link=$(curl -s -F"shorten=$1" http://0x0.st)
 		if [ "$link" ]; then
+			# Bad error handling
 			if [ "$link" == "Segmentation fault" ]; then
 				echo "Error shortening URL"
 			else

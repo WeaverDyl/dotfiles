@@ -73,7 +73,7 @@ if ${use_color} ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
 		PROMPT_COMMAND='PS1X=$(p="${PWD#${HOME}}"; [ "${PWD}" != "${p}" ] && printf "~";IFS=/; for q in ${p:1}; do printf /${q:0:1}; done; printf "${q:1}")'
-		PS1='\[\033[01;31m\][\[\033[01;36m\]\t\[\033[01;31m\]] \[\033[01;36m\]${PS1X} \[\033[01;31m\]>\[\033[00m\] '	
+		PS1='\[\033[01;31m\][\[\033[01;36m\]\t\[\033[01;31m\]] \[\033[01;36m\]${PS1X} \[\033[01;31m\]>\[\033[00m\] '
 	fi
 
 	alias ls='ls --color=auto'
@@ -137,6 +137,43 @@ ex ()
   else
     echo "'$1' is not a valid file"
   fi
+}
+
+upload() {
+	if [ -z "$1" ]; then
+		echo "You must give a filename as an argument"
+	else
+		link=$(curl -s -F"file=@$1" http://0x0.st)
+		if [ "$link" ]; then
+			if [ "$link" == "Segmentation fault" ]; then
+				echo "Upload failed!"
+			else
+				echo "$link" | xclip -selection clipboard
+				echo "'$1' was successfully uploaded! Link: $link"
+			fi
+		else
+			echo "Upload failed!"
+		fi
+	fi
+}
+
+shorten() {
+	if [ -z "$1" ]; then
+		echo "You must give a URL as an argument"
+	else
+		link=$(curl -s -F"shorten=$1" http://0x0.st)
+		if [ "$link" ]; then
+			if [ "$link" == "Segmentation fault" ]; then
+				echo "Error shortening URL"
+			else
+				echo "$link" | xclip -selection clipboard
+				echo "Here's your shortened link: $link"
+			fi
+		else
+			echo "Error shortening URL"
+		fi
+	fi
+
 }
 
 # Pywal

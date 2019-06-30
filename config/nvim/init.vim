@@ -5,6 +5,7 @@ filetype plugin indent on
 set relativenumber
 colorscheme onedark
 set termguicolors
+set undofile
 set tabstop=4
 set shiftwidth=4
 set laststatus=2
@@ -68,6 +69,8 @@ noremap! <C-c> <Esc>:tabnext<cr>
 noremap <C-x> :tabprevious<cr>
 noremap! <C-x> <Esc>:tabprevious<cr>
 
+" Buffer mappings
+noremap <leader>q :bd<cr>
 noremap <leader>n :bprevious<cr>
 noremap <leader>m :bnext<cr>
 

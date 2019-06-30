@@ -51,7 +51,6 @@ let g:DevIconsEnableFoldersOpenClose = 1
 
 " Nerd tree
 let NERDTreeShowHidden=1 " shows hidden files
-autocmd VimEnter * NERDTreeFind
 autocmd FileType nerdtree nmap <buffer> <left> u
 autocmd FileType nerdtree nmap <buffer> <right> <cr>
 map <C-z> <Nop>

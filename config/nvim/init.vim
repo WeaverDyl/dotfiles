@@ -51,6 +51,7 @@ let g:DevIconsEnableFoldersOpenClose = 1
 
 " Nerd tree
 let NERDTreeShowHidden=1 " shows hidden files
+autocmd VimEnter * NERDTreeFind
 autocmd FileType nerdtree nmap <buffer> <left> u
 autocmd FileType nerdtree nmap <buffer> <right> <cr>
 map <C-z> <Nop>
@@ -62,6 +63,16 @@ noremap! <C-a> :NERDTreeTabsToggle<cr>
 " Swap lines
 nnoremap <C-Down> "add"ap
 nnoremap <C-Up> <Up>"add"ap<Up>
+
+" Wrap mappings
+" These 4 because I'm an arrow key peasant
+noremap <Up> gk
+noremap <Down> gj
+noremap! <Up> gk
+noremap! <Down> gj
+
+noremap j gj
+noremap k gk
 
 " Tab mappings
 noremap <C-c> :tabnext<cr>

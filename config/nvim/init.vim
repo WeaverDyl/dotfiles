@@ -32,6 +32,7 @@ Plugin 'w0rp/ale'
 Plugin 'alvan/vim-closetag'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'arp242/undofile_warn.vim'
 call vundle#end()
 
 " Plugin Settings
@@ -83,6 +84,7 @@ noremap! <C-x> <Esc>:tabprevious<cr>
 noremap <leader>q :bd<cr>
 noremap <leader>n :bprevious<cr>
 noremap <leader>m :bnext<cr>
+noremap <leader>l :bd<cr>
 
 " Update programs when their configs are changed
 autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd

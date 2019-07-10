@@ -8,6 +8,8 @@ super + shift + p
 # Basics
 super + Return
 	$TERMINAL
+super + shift + Return
+	$TERMINAL --directory "$(xcwd)"
 super + d
 	rofi -show run
 

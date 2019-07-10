@@ -87,7 +87,7 @@ noremap <leader>m :bnext<cr>
 noremap <leader>l :bd<cr>
 
 " Update programs when their configs are changed
-autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
+autocmd BufWritePost *sxhkdrc silent !pkill -USR1 sxhkd
 autocmd BufWritePost *Xresources,*Xdefaults silent !xrdb %
 autocmd BufWritePost */i3/config silent !i3-msg reload
 

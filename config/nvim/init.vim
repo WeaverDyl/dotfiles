@@ -81,10 +81,23 @@ noremap <C-x> :tabprevious<cr>
 noremap! <C-x> <Esc>:tabprevious<cr>
 
 " Buffer mappings
-noremap <leader>q :bd<cr>
+function! IsNerdTreeEnabled()
+    return exists('t:NERDTreeBufName') && bufwinnr(t:NERDTreeBufName) != -1
+endfunction
+
+function! Buffer_Delete()
+	if IsNerdTreeEnabled()
+		NERDTreeTabsToggle
+		bd
+		NERDTreeTabsToggle
+	else
+		bd
+	endif
+endfunction
+
+noremap <leader>q :call Buffer_Delete()<cr>
 noremap <leader>n :bprevious<cr>
 noremap <leader>m :bnext<cr>
-noremap <leader>l :bd<cr>
 
 " Update programs when their configs are changed
 autocmd BufWritePost *sxhkdrc silent !pkill -USR1 sxhkd

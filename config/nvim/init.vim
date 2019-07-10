@@ -1,6 +1,7 @@
 let mapleader = ','
 
 " Basic settings
+set hidden
 filetype plugin indent on
 set relativenumber
 colorscheme onedark
@@ -57,7 +58,7 @@ autocmd FileType nerdtree nmap <buffer> <right> <cr>
 map <C-z> <Nop>
 let NERDTreeMapOpenInTab='<C-z>' " remap t to ctrl-z
 noremap <C-a> :NERDTreeTabsToggle<cr>
-noremap! <C-a> :NERDTreeTabsToggle<cr>
+noremap! <C-a> <Esc>:NERDTreeTabsToggle<cr>
 
 " General mappings
 " Swap lines

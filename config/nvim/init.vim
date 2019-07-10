@@ -57,8 +57,9 @@ autocmd FileType nerdtree nmap <buffer> <left> u
 autocmd FileType nerdtree nmap <buffer> <right> <cr>
 map <C-z> <Nop>
 let NERDTreeMapOpenInTab='<C-z>' " remap t to ctrl-z
-noremap <C-a> :NERDTreeTabsToggle<cr>
-noremap! <C-a> <Esc>:NERDTreeTabsToggle<cr>
+
+noremap <expr> <C-a> @% == "" ? ':NERDTreeToggle<cr>':':NERDTreeToggle %<cr>'
+noremap! <expr> <C-a> @% == "" ? ':NERDTreeToggle<cr>':':NERDTreeToggle %<cr>'
 
 " General mappings
 " Swap lines
@@ -82,20 +83,15 @@ noremap <C-x> :tabprevious<cr>
 noremap! <C-x> <Esc>:tabprevious<cr>
 
 " Buffer mappings
-function! IsNerdTreeEnabled()
-    return exists('t:NERDTreeBufName') && bufwinnr(t:NERDTreeBufName) != -1
-endfunction
-
 function! Buffer_Delete()
-	if IsNerdTreeEnabled()
-		NERDTreeTabsToggle
+	if exists("g:NERDTree") && g:NERDTree.IsOpen()
+		NERDTreeToggle %
 		bd
-		NERDTreeTabsToggle
+		NERDTreeToggle
 	else
 		bd
 	endif
 endfunction
-
 noremap <leader>q :call Buffer_Delete()<cr>
 noremap <leader>n :bprevious<cr>
 noremap <leader>m :bnext<cr>

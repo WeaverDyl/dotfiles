@@ -76,7 +76,7 @@ modules-right = filesystem cpu memory wlan battery
 [module/weather]
 type = custom/script
 exec = ~/.config/polybar/weather
-interval = 600
+interval = 300
 
 [module/packageupdater]
 type = custom/script
@@ -84,14 +84,14 @@ format-prefix = " "
 exec = ~/.config/polybar/pkgupgrd/pupd
 click-left = $TERMINAL -e ~/.config/polybar/pkgupgrd/upgrade
 label = %output%
-interval = 10800
+interval = 300
 
 [module/newsboat]
 type = custom/script
 format-prefix = " "
 exec = ~/.config/polybar/refnews
 label = %output%
-interval = 900
+interval = 300
 
 [module/gmail]
 type = custom/script

@@ -6,12 +6,8 @@ if pgrep -x "newsboat" > /dev/null; then
 fi
 
 # Ping 8.8.8.8 once to determine if we're connected to the internet
-ping -q -c 1 8.8.8.8 > /dev/null 2>&1 || { echo "No Internet"; exit; }
-
-/usr/bin/notify-send "📰 Updating Newsboat RSS..."
+ping -q -c 1 8.8.8.8 > /dev/null 2>&1 || exit;
 
 /usr/bin/newsboat -x reload
 
 echo "$(newsboat -x print-unread | grep -Eo "[0-9]+") new"
-
-/usr/bin/notify-send "📰 Newsboat updated!"

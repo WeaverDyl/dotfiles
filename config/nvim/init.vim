@@ -51,6 +51,9 @@ let g:NERDTreeIndicatorMapCustom = {
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:DevIconsEnableFoldersOpenClose = 1
 
+" undofile_warn
+let g:undofile_warn_mode = 2
+
 " Nerd tree
 let NERDTreeShowHidden=1 " shows hidden files
 autocmd FileType nerdtree nmap <buffer> <left> u

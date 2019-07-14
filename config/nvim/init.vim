@@ -61,7 +61,7 @@ autocmd FileType nerdtree nmap <buffer> <right> <cr>
 map <C-z> <Nop>
 let NERDTreeMapOpenInTab='<C-z>' " remap t to ctrl-z
 
-noremap <expr> <C-a> @% == "" ? ':NERDTreeToggle<cr>':':NERDTreeToggle %<cr>'
+"noremap <expr> <C-a> @% == "" ? ':NERDTreeToggle<cr>':':NERDTreeToggle %<cr>'
 noremap! <expr> <C-a> @% == "" ? '<Esc>:NERDTreeToggle<cr>':'<Esc>:NERDTreeToggle %<cr>'
 
 " General mappings
@@ -70,11 +70,8 @@ nnoremap <C-Down> "add"ap
 nnoremap <C-Up> <Up>"add"ap<Up>
 
 " Wrap mappings
-" These 4 because I'm an arrow key peasant
 noremap <Up> gk
 noremap <Down> gj
-noremap! <Up> gk
-noremap! <Down> gj
 
 noremap j gj
 noremap k gk

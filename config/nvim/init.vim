@@ -62,7 +62,7 @@ map <C-z> <Nop>
 let NERDTreeMapOpenInTab='<C-z>' " remap t to ctrl-z
 
 noremap <expr> <C-a> @% == "" ? ':NERDTreeToggle<cr>':':NERDTreeToggle %<cr>'
-noremap! <expr> <C-a> @% == "" ? ':NERDTreeToggle<cr>':':NERDTreeToggle %<cr>'
+noremap! <expr> <C-a> @% == "" ? '<Esc>:NERDTreeToggle<cr>':'<Esc>:NERDTreeToggle %<cr>'
 
 " General mappings
 " Swap lines

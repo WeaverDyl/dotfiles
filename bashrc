@@ -186,6 +186,8 @@ shorten() {
 cat ~/.cache/wal/sequences
 source ~/.cache/wal/colors-tty.sh
 
+source ~/.profile
+
 # aliases
 alias vim="nvim"
 alias p="sudo pacman"

@@ -1,12 +1,136 @@
 #!/bin/bash
 
-ping -q -c 1 8.8.8.8 > /dev/null 2>&1 || exit;
+main() {
+	ping -q -c 1 8.8.8.8 > /dev/null 2>&1 || exit;
 
-output=$(curl -s wttr.in/?format="%C%20%t" | sed -e "s/\b\(.\)/\u\1/g" -e "s/+//g")
+	# Straight results from Curl. The weather can be overly complicated and temp needs formatting
+	weather_base=$(curl -s wttr.in/?format="%C" | sed -e "s/\b\(.\)/\u\1/g" -e "s/+//g")
+	temp_base=$(curl -s wttr.in/?format="%t" | sed -e "s/+//g")
 
-if [[ ${output,,} =~ error|500|504|unknown ]];
-then
-	echo "Weather Error"
-else
-	echo $output
-fi
+	if [[ ${output,,} =~ error|500|504|unknown ]]; then
+		echo "Weather Error"
+	else
+		# All OK to continue
+		weather_formatted=$(get_weather_description "$weather_base") # Icon & description
+		temp_num=$(echo $temp_base | grep -Eo [0-9]+) # 90°F -> 90
+		temp_icon=$(get_temp_icon "$temp_num") # Thermometer
+
+		echo "$weather_formatted $temp_icon $temp_base"
+	fi
+}
+
+get_temp_icon() {
+	if (( $1 < 32 )); then
+		echo ""
+	elif (( $1 < 55 )); then
+		echo ""
+	elif (( $1 < 70 )); then
+		echo ""
+	elif (( $1 < 85 )); then
+		echo ""
+	else
+		echo ""
+	fi
+}
+
+get_weather_description() {
+	if [[ "$1" = "Clear" ]]; then
+		echo " Clear"
+	elif [[ "$1" = "Sunny" ]]; then
+		echo " Sunny"
+	elif [[ "$1" = "Partly Cloudy" ]]; then
+		echo " Partly Cloudy"
+	elif [[ "$1" = "Cloudy" ]]; then
+		echo " Cloudy"
+	elif [[ "$1" = "Overcast" ]]; then
+		echo " Cloudy"
+	elif [[ "$1" = "Mist" ]]; then
+		echo " Mist"
+	elif [[ "$1" = "Patchy Rain Possible" ]]; then
+		echo " Rain"
+	elif [[ "$1" = "Patchy Snow Possible" ]]; then
+		echo " Snow"
+	elif [[ "$1" = "Patchy Sleet Possible" ]]; then
+		echo " Sleet"
+	elif [[ "$1" = "Patchy Freezing Drizzle Possible" ]]; then
+		echo " Drizzle"
+	elif [[ "$1" = "Thundery Outbreaks Possible" ]]; then
+		echo " Thunder"
+	elif [[ "$1" = "Blowing Snow" ]]; then
+		echo " Snow"
+	elif [[ "$1" = "Blizzard" ]]; then
+		echo " Blizzard"
+	elif [[ "$1" = "Fog" ]]; then
+		echo " Fog"
+	elif [[ "$1" = "Freezing Fog" ]]; then
+		echo " Fog"
+	elif [[ "$1" = "Patchy Light Drizzle" ]]; then
+		echo " Drizzle"
+	elif [[ "$1" = "Light Drizzle" ]]; then
+		echo " Drizzle"
+	elif [[ "$1" = "Freezing Drizzle" ]]; then
+		echo " Drizzle"
+	elif [[ "$1" = "Heavy Freezing Drizzle" ]]; then
+		echo " Drizzle"
+	elif [[ "$1" = "Patchy Light Rain" ]]; then
+		echo " Light Rain"
+	elif [[ "$1" = "Light Rain" ]]; then
+		echo " Light Rain"
+	elif [[ "$1" = "Moderate Rain At Times" ]]; then
+		echo " Rain"
+	elif [[ "$1" = "Moderate Rain" ]]; then
+		echo " Rain"
+	elif [[ "$1" = "Heavy Rain At Times" ]]; then
+		echo " Rain"
+	elif [[ "$1" = "Heavy Rain" ]]; then
+		echo " Heavy Rain"
+	elif [[ "$1" = "Light Freezing Rain" ]]; then
+		echo " Freezing Rain"
+	elif [[ "$1" = "Moderate Or Heavy Freezing Rain" ]]; then
+		echo " Freezing Rain"
+	elif [[ "$1" = "Light Sleet" ]]; then
+		echo " Sleet"
+	elif [[ "$1" = "Moderate Or Heavy Sleet" ]]; then
+		echo " Sleet"
+	elif [[ "$1" = "Patchy Light Snow" ]]; then
+		echo " Light Snow"
+	elif [[ "$1" = "Light Snow" ]]; then
+		echo " Light Snow"
+	elif [[ "$1" = "Patchy Moderate Snow" ]]; then
+		echo " Snow"
+	elif [[ "$1" = "Moderate Snow" ]]; then
+		echo " Snow"
+	elif [[ "$1" = "Patchy Heavy Snow" ]]; then
+		echo " Heavy Snow"
+	elif [[ "$1" = "Heavy Snow" ]]; then
+		echo " Heavy Snow"
+	elif [[ "$1" = "Ice Pellets" ]]; then
+		echo " Ice"
+	elif [[ "$1" = "Light Rain Shower" ]]; then
+		echo " Light Rain"
+	elif [[ "$1" = "Moderate Or Heavy Rain Shower" ]]; then
+		echo " Heavy Rain"
+	elif [[ "$1" = "Torrential Rain Shower" ]]; then
+		echo " Torrential Rain"
+	elif [[ "$1" = "Light Sleet Showers" ]]; then
+		echo " Sleet"
+	elif [[ "$1" = "Moderate Or Heavy Sleet Showers" ]]; then
+		echo " Sleet"
+	elif [[ "$1" = "Light Snow Showers" ]]; then
+		echo " Light Snow"
+	elif [[ "$1" = "Moderate Or Heavy Snow Showers" ]]; then
+		echo " Heavy Snow"
+	elif [[ "$1" = "Patchy Light Rain With Thunder" ]]; then
+		echo " Thunderstorm"
+	elif [[ "$1" = "Moderate Or Heavy Rain With Thunder" ]]; then
+		echo " Thunderstorm"
+	elif [[ "$1" = "Patchy Light Snow With Thunder" ]]; then
+		echo " Thunder Snow"
+	elif [[ "$1" = "Moderate Or Heavy Snow With Thunder" ]]; then
+		echo " Thunder Snow"
+	else
+		echo " $1"
+	fi
+}
+
+main

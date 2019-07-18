@@ -3,9 +3,9 @@
 main() {
 	ping -q -c 1 8.8.8.8 > /dev/null 2>&1 || exit;
 
-	# Straight results from Curl. The weather can be overly complicated and temp needs formatting
-	weather_base=$(curl -s wttr.in/?format="%C" | sed -e "s/\b\(.\)/\u\1/g" -e "s/+//g")
-	temp_base=$(curl -s wttr.in/?format="%t" | sed -e "s/+//g")
+	# Straight results from Curl. The weather and temp both need formatting
+	weather_base=$(curl -s wttr.in/?format="%C" | sed "s/\b\(.\)/\u\1/g")
+	temp_base=$(curl -s wttr.in/?format="%t" | sed "s/+//g")
 
 	if [[ ${output,,} =~ error|500|504|unknown ]]; then
 		echo "Weather Error"
@@ -128,6 +128,10 @@ get_weather_description() {
 		echo " Thunder Snow"
 	elif [[ "$1" = "Moderate Or Heavy Snow With Thunder" ]]; then
 		echo " Thunder Snow"
+	# Undefined in repo starts here
+		echo " Thunderstorm"
+	elif [[ "$1" = "Thunderstorm In Vicinity" ]]; then
+		echo " Thunderstorm Near"
 	else
 		echo " $1"
 	fi

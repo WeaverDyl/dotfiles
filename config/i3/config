@@ -133,7 +133,7 @@ for_window [class="vlc"] floating enable
 for_window [class="Sxiv"] floating enable border pixel 3
 for_window [class="keepassxc"] floating enable
 for_window [class="blueman-manager"] floating enable
-
+for_window [class="Xarchiver"] floating enable
 # Coloring
 set_from_resource $fg foreground
 set_from_resource $bg background

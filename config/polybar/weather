@@ -129,7 +129,6 @@ get_weather_description() {
 	elif [[ "$1" = "Moderate Or Heavy Snow With Thunder" ]]; then
 		echo " Thunder Snow"
 	# Undefined in repo starts here
-		echo " Thunderstorm"
 	elif [[ "$1" = "Thunderstorm In Vicinity" ]]; then
 		echo " Thunderstorm Near"
 	else

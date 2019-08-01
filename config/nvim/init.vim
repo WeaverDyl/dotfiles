@@ -11,6 +11,7 @@ set tabstop=4
 set shiftwidth=4
 set laststatus=2
 set guicursor=
+set foldmethod=marker
 set clipboard+=unnamedplus     	" yank to system clipboard too
 set nocompatible              	" be iMproved, required
 set autoindent

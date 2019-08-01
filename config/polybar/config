@@ -16,6 +16,7 @@
 ;
 ;==========================================================
 
+{{{ Color Settings
 [colors]
 background = ${xrdb:background}
 background_transparent = ${xrdb:background}
@@ -25,7 +26,9 @@ foreground-alt = ${xrdb:foreground}
 primary = ${xrdb:foreground}
 secondary = ${xrdb:foreground}
 alert = ${xrdb:background}
+}}}
 
+{{{ Top Bar
 [bar/top]
 width = 100%
 height = 30
@@ -55,7 +58,8 @@ separator = |
 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
+}}}
+{{{ Bottom Bar
 [bar/bottom]
 inherit = bar/top
 bottom = true
@@ -70,12 +74,15 @@ tray-position = center
 modules-left = packageupdater newsboat gmail
 modules-center =
 modules-right = filesystem cpu memory wlan battery
+}}}
 
+{{{ Weather Module
 [module/weather]
 type = custom/script
 exec = ~/.config/polybar/weather
 interval = 300
-
+}}}
+{{{ Package Updater Module
 [module/packageupdater]
 type = custom/script
 format-prefix = " "
@@ -83,30 +90,30 @@ exec = ~/.config/polybar/pkgupgrd/pupd
 click-left = $TERMINAL -e ~/.config/polybar/pkgupgrd/upgrade
 label = %output%
 interval = 300
-
+}}}
+{{{ Newsboat Updater Module
 [module/newsboat]
 type = custom/script
 format-prefix = " "
 exec = ~/.config/polybar/refnews
 label = %output%
 interval = 300
-
+}}}
+{{{ Gmail Updater Module
 [module/gmail]
 type = custom/script
 format-prefix = " "
 exec = ~/.config/polybar/gmail/launch.py
 click-left = xdg-open https://mail.google.com
-
+}}}
+{{{ Spotify Module
 [module/spotify]
 type = custom/script
 exec = ~/.config/polybar/spotify/player-mpris-tail.py --icon-playing  --icon-paused  --icon-stopped ' Spotify Stopped' --icon-none ' Spotify Closed' -f ' {:artist:t18:{artist}:}{:artist:: :}{:t20:{title}:} %{A1:~/.config/polybar/spotify/player-mpris-tail.py previous:}  %{A} %{A1:~/.config/polybar/spotify/player-mpris-tail.py play-pause:} {icon-reversed} %{A} %{A1:~/.config/polybar/spotify/player-mpris-tail.py next:}  %{A}'
 tail = true
 label = %output%
-
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
-
+}}}
+{{{ Filesystem Module
 [module/filesystem]
 type = internal/fs
 interval = 10
@@ -115,7 +122,8 @@ mount-0 = /
 label-mounted =  %free%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
-
+}}}}
+{{{ bspwm Module
 [module/bspwm]
 type = internal/bspwm
 
@@ -134,7 +142,8 @@ label-urgent-padding = 2
 label-empty = %index%
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
-
+}}}
+{{{ i3 Module
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
@@ -165,19 +174,22 @@ label-visible-padding = ${self.label-focused-padding}
 label-urgent = %name%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
-
+}}}
+{{{ CPU Usage Module
 [module/cpu]
 type = internal/cpu
 interval = 1
 label =  %percentage:2%%
 format = %{A1:~/.config/polybar/cpu:}<label>%{A}
-
+}}}
+{{{ Memory Usage Module
 [module/memory]
 type = internal/memory
 interval = 2
 label =  %gb_used% / %gb_total%
 format = %{A1:~/.config/polybar/memory:}<label>%{A}
-
+}}}
+{{{ Network Module
 [module/wlan]
 type = internal/network
 interface = wlp6s0
@@ -186,7 +198,8 @@ interval = 3.0
 format-connected =  <label-connected>
 label-connected = %essid%
 format-disconnected =  No Internet
-
+}}}
+{{{ Time/Date Module
 [module/date]
 type = internal/date
 interval = 1
@@ -196,7 +209,8 @@ time =  %H:%M:%S
 
 label = %date% %time%
 format = %{A1:gsimplecal:}<label>%{A}
-
+}}}
+{{{ alsa Module
 [module/alsa]
 type = internal/alsa
 ramp-volume-0 = 
@@ -206,7 +220,8 @@ label-muted =  Muted
 format-volume = <ramp-volume> <label-volume>
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
-
+}}}
+{{{ Battery Module
 [module/battery]
 type = internal/battery
 battery = BAT0
@@ -234,7 +249,8 @@ ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
-
+}}}
+{{{ Power Menu Module
 [module/powermenu]
 type = custom/menu
 expand-right = true
@@ -266,10 +282,13 @@ menu-3-1 = 
 menu-3-1-exec = systemctl suspend
 menu-3-0 = 
 menu-3-0-exec = menu-open-0
+}}}
 
+{{{ Global Settings
 [settings]
 screenchange-reload = true
 
 [global/wm]
 margin-top = 5
 margin-bottom = 5
+}}}

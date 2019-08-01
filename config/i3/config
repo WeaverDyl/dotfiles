@@ -1,4 +1,13 @@
-# Basic Settings #
+#   _ _____        ____
+#  (_)___ /       / ___| __ _ _ __  ___
+#  | | |_ \ _____| |  _ / _` | '_ \/ __|
+#  | |___) |_____| |_| | (_| | |_) \__ \
+#  |_|____/       \____|\__,_| .__/|___/
+#                            |_|
+#
+#       c o n f i g u r a t i o n
+
+#Basic i3 Settings {{{
 set $mod Mod4
 
 smart_gaps on # i3-gaps settings
@@ -14,8 +23,9 @@ for_window [urgent=latest] focus
 focus_follows_mouse no
 workspace_auto_back_and_forth yes # Keying/pressing current workspace moves you to previous workspace
 font pango:FiraCode 12px
+#}}}
 
-# Basic Binds #
+#Key Binds {{{
 bindsym $mod+Shift+q	kill
 bindsym $mod+Shift+e	exec "i3-nagbar -m 'Really exit i3?' -b 'Yes, exit i3'  'i3-msg exit'"
 bindsym $mod+Shift+r	exec i3-msg reload
@@ -50,13 +60,9 @@ bindsym $mod+plus		move scratchpad
 bindsym $mod+s			[con_mark="spotify"] scratchpad show
 bindsym $mod+x			[con_mark="discord"] scratchpad show
 bindsym $mod+z			[con_mark="keepass"] scratchpad show
+#}}}
 
-# Scratchpad
-for_window [class="Spotify"] mark "spotify", move scratchpad
-for_window [class="discord"] mark "discord", move scratchpad
-for_window [class="keepassxc"] mark "keepass", move scratchpad
-
-# Workspace names
+#Workspace Settings {{{
 set $ws1 "1: "
 set $ws2 "2: "
 set $ws3 "3: "
@@ -88,8 +94,9 @@ bindsym $mod+Ctrl+6 move container to workspace $ws6
 bindsym $mod+Ctrl+7 move container to workspace $ws7
 bindsym $mod+Ctrl+8 move container to workspace $ws8
 bindsym $mod+Ctrl+9 move container to workspace $ws9
+#}}}
 
-# Resize window
+#Gap and Window Settings {{{
 bindsym $mod+r mode "resize"
 mode "resize" {
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -105,8 +112,9 @@ mode "resize" {
 # Gap settings -> 0 or default
 bindsym $mod+Ctrl+s gaps inner current set 0; gaps outer current set 0
 bindsym $mod+Ctrl+d gaps inner current set 14; gaps outer current set -2
+#}}}
 
-# Autostart applications
+#Application Autostart Settings {{{
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id compton -b --config ~/.config/compton.conf
 exec --no-startup-id xfce4-power-manager
@@ -118,8 +126,9 @@ exec --no-startup-id discord
 exec --no-startup-id keepassxc
 exec --no-startup-id fluxgui
 exec --no-startup-id dropbox
+#}}}
 
-# Open specific applications in floating mode
+#Floating Application Settings {{{
 for_window [class="Galculator"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
 for_window [class="Lightdm-settings"] floating enable
@@ -134,7 +143,15 @@ for_window [class="Sxiv"] floating enable border pixel 3
 for_window [class="keepassxc"] floating enable
 for_window [class="blueman-manager"] floating enable
 for_window [class="Xarchiver"] floating enable
-# Coloring
+#}}}
+
+#Scratchpad Settings {{{
+for_window [class="Spotify"] mark "spotify", move scratchpad
+for_window [class="discord"] mark "discord", move scratchpad
+for_window [class="keepassxc"] mark "keepass", move scratchpad
+#}}}
+
+#Color Settings {{{
 set_from_resource $fg foreground
 set_from_resource $bg background
 set_from_resource $fbg color8
@@ -143,3 +160,4 @@ client.focused          $fbg $fbg $bg $fbg
 client.focused_inactive $bg $bg $fg $bg
 client.unfocused        $bg $bg $fg $bg
 client.urgent           $bg $bg $bg $bg
+#}}}

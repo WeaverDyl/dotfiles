@@ -65,6 +65,10 @@ let NERDTreeMapOpenInTab='<C-z>' " remap t to ctrl-z
 noremap <expr> <C-a> @% == "" ? ':NERDTreeToggle<cr>':':NERDTreeToggle %<cr>'
 noremap! <expr> <C-a> @% == "" ? '<Esc>:NERDTreeToggle<cr>':'<Esc>:NERDTreeToggle %<cr>'
 
+" YouCompleteMe
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+
 " General mappings
 " Swap lines
 nnoremap <C-Down> "add"ap

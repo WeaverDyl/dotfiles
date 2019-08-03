@@ -131,6 +131,8 @@ get_weather_description() {
 	# Undefined in repo starts here
 	elif [[ "$1" = "Thunderstorm In Vicinity" ]]; then
 		echo " Thunderstorm Near"
+	elif [[ "$1" = "Thunderstorm" ]]; then
+		echo " Thunderstorm"
 	else
 		echo " $1"
 	fi

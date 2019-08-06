@@ -226,7 +226,6 @@ label-volume-foreground = ${root.foreground}
 type = internal/battery
 battery = BAT0
 adapter = ADP1
-full-at = 98
 
 format-full = <ramp-capacity> <label-full>
 
@@ -235,6 +234,9 @@ format-charging-underline =
 
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline =
+
+label-charging = %percentage_raw%%
+label-discharging = %percentage_raw%%
 
 animation-charging-0 = 
 animation-charging-1 = 

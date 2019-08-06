@@ -60,6 +60,8 @@ bindsym $mod+plus		move scratchpad
 bindsym $mod+s			[con_mark="spotify"] scratchpad show
 bindsym $mod+x			[con_mark="discord"] scratchpad show
 bindsym $mod+z			[con_mark="keepass"] scratchpad show
+
+bindsym $mod+a			exec --no-startup-id ddspawn todo
 #}}}
 
 #{{{ Workspace Settings
@@ -143,12 +145,16 @@ for_window [class="Sxiv"] floating enable border pixel 3
 for_window [class="keepassxc"] floating enable
 for_window [class="blueman-manager"] floating enable
 for_window [class="Xarchiver"] floating enable
+for_window [class="^Pcmanfm$"] floating enable
+
+for_window [instance="scratch_todo"] floating enable sticky enable resize set 800 400
 #}}}
 
 #{{{ Scratchpad Settings
 for_window [class="Spotify"] mark "spotify", move scratchpad
 for_window [class="discord"] mark "discord", move scratchpad
 for_window [class="keepassxc"] mark "keepass", move scratchpad
+for_window [instance="scratch_todo"] mark "todo", move scratchpad
 #}}}
 
 #{{{ Color Settings

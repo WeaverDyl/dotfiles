@@ -18,6 +18,9 @@ set autoindent
 syntax on
 filetype plugin indent on
 
+" nvim
+set inccommand=nosplit
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
@@ -35,6 +38,7 @@ Plugin 'alvan/vim-closetag'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'arp242/undofile_warn.vim'
+Plugin 'tpope/vim-commentary'
 call vundle#end()
 
 " Plugin Settings

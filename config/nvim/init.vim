@@ -66,8 +66,8 @@ autocmd FileType nerdtree nmap <buffer> <right> <cr>
 map <C-z> <Nop>
 let NERDTreeMapOpenInTab='<C-z>' " remap t to ctrl-z
 
-noremap <expr> <C-a> @% == "" ? ':NERDTreeToggle<cr>':':NERDTreeToggle %<cr>'
-noremap! <expr> <C-a> @% == "" ? '<Esc>:NERDTreeToggle<cr>':'<Esc>:NERDTreeToggle %<cr>'
+noremap <C-a> :call NerdTreeToggleFind()<cr>
+noremap! <expr> <C-a> :<Esc> NerdTreeToggleFind()<cr>
 
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_insertion = 1
@@ -92,6 +92,16 @@ noremap <C-x> :tabprevious<cr>
 noremap! <C-x> <Esc>:tabprevious<cr>
 
 " Buffer mappings
+function! NerdTreeToggleFind()
+    if exists("g:NERDTree") && g:NERDTree.IsOpen()
+        NERDTreeClose
+    elseif filereadable(expand('%'))
+        NERDTreeFind
+    else
+        NERDTree
+    endif
+endfunction
+
 function! Buffer_Delete()
 	if exists("g:NERDTree") && g:NERDTree.IsOpen()
 		NERDTreeToggle %

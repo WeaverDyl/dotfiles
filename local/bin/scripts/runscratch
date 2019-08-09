@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Partial credit to Luke Smith (https://github.com/LukeSmithxyz/voidrice/)
+
+# Runs a script in the terminal bound by a key combination. Pressing that
+# combination again will kill the window. Utilizes scratchpad for ease
+# of killing
+
+script=$1
+shift
+if xwininfo -tree -root | grep "(\"scratch_$script\" ";
+then
+	echo "Window detected."
+	i3 "[instance=\"scratch_$script\"] kill"
+else
+	echo "Window not detected... spawning."
+	i3 "exec --no-startup-id $TERMINAL -e $script --name scratch_$script"
+	sleep 0.5 # hax
+	i3 "[instance=\"scratch_$script\"] scratchpad show move position center"
+fi

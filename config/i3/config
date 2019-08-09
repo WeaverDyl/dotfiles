@@ -61,7 +61,7 @@ bindsym $mod+s			[con_mark="spotify"] scratchpad show
 bindsym $mod+x			[con_mark="discord"] scratchpad show
 bindsym $mod+z			[con_mark="keepass"] scratchpad show
 
-bindsym $mod+a			exec --no-startup-id ddspawn todo
+bindsym $mod+a			exec --no-startup-id runscratch todo
 #}}}
 
 #{{{ Workspace Settings

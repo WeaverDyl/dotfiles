@@ -186,7 +186,7 @@ format = %{A1:~/.config/polybar/cpu:}<label>%{A}
 [module/memory]
 type = internal/memory
 interval = 2
-label =  %gb_used% / %gb_total%
+label =  %percentage_used%%
 format = %{A1:~/.config/polybar/memory:}<label>%{A}
 }}}
 {{{ Network Module

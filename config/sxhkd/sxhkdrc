@@ -19,7 +19,7 @@ super + grave
 super + n
 	$TERMINAL -e newsboat
 super + c
-	galculator
+	rofi -show calc -modi calc -no-show-match -no-sort -lines 3
 super + g
 	gimp
 super + i

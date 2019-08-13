@@ -37,7 +37,7 @@ super + F3
 
 # Screenshots
 @Print
-	imgur-screenshot
+	imgur-screenshot -l true
 
 # Media
 XF86AudioLowerVolume

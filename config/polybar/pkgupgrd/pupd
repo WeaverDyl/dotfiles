@@ -6,12 +6,11 @@ num_updates=$(yay -Qu | wc -l)
 
 if [ $num_updates -eq "1" ]; then
 	echo $num_updates update
-	if [ $num_updates -ge 50 ]; then
-		/usr/bin/notify-send "📦 You've got $num_updates update!"
-	fi
 else
 	echo $num_updates updates
-	if [ $num_updates -ge 50 ]; then
-		/usr/bin/notify-send "📦 You've got $num_updates update!"
-	fi
+fi
+
+# Notify user if they have a lot of updates (>= 50)
+if [ $num_updates -ge "50" ]; then
+	/usr/bin/notify-send "📦 You've got $num_updates updates!"
 fi

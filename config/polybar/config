@@ -235,8 +235,8 @@ format-charging-underline =
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline =
 
-label-charging = %percentage_raw%%
-label-discharging = %percentage_raw%%
+label-charging = %percentage_raw%% (%time:0:5%)
+label-discharging = %percentage_raw%% (%time:0:5%)
 
 animation-charging-0 = 
 animation-charging-1 = 

@@ -135,6 +135,8 @@ get_weather_description() {
 		echo " Thunderstorm"
 	elif [[ "$1" = "Heavy Rain With Thunderstorm, Fog" ]]; then
 		echo " Thunderstorm"
+	elif [[ "$1" = "Rain, Mist" ]]; then
+		echo " Rain"
 	else
 		echo " $1"
 	fi

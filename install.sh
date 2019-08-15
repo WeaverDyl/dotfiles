@@ -1,11 +1,8 @@
 #!/bin/sh
 
 DOTFILES=$HOME/dotfiles
-SKIP="\.git|\.gitignore|README\.md|install\.sh|discord|wallpapers"
+SKIP="\.git|\.gitignore|README\.md|install\.sh|discord"
 echo -e "Creating Symlinks...\n"
-
-# Symlink Wallpapers folder
-ln -s $DOTFILES/wallpapers $HOME/Pictures
 
 # Base Config files
 for file in $( find -H "$DOTFILES" -maxdepth 1 -type f | grep -Ev $SKIP ) ; do

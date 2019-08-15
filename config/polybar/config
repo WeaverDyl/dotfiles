@@ -226,17 +226,18 @@ label-volume-foreground = ${root.foreground}
 type = internal/battery
 battery = BAT0
 adapter = ADP1
+full-at = 99
+
+poll-interval = 5
+time-format = (%H:%M)
 
 format-full = <ramp-capacity> <label-full>
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline =
-
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-underline =
 
-label-charging = %percentage_raw%% (%time:0:5%)
-label-discharging = %percentage_raw%% (%time:0:5%)
+label-charging = %percentage%% %time%
+label-discharging = %percentage%% %time%
 
 animation-charging-0 = 
 animation-charging-1 = 

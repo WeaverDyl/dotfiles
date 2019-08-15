@@ -7,9 +7,11 @@ main() {
 	weather_base=$(curl -s wttr.in/?format="%C" | sed "s/\b\(.\)/\u\1/g")
 	temp_base=$(curl -s wttr.in/?format="%t" | sed "s/+//g")
 
-	if [[ ${output,,} =~ error|500|504|unknown ]]; then
+	if [[ ${weather_base,,} =~ error|500|504|unknown ]] ||
+		[[ ${temp_base,,} =~ error|500|504|unknown ]]; then
 		echo "Weather Error"
 	else
+		echo $weather_base
 		# All OK to continue
 		weather_formatted=$(get_weather_description "$weather_base") # Icon & description
 		temp_num=$(echo $temp_base | grep -Eo [0-9]+) # 90°F -> 90

@@ -8,3 +8,4 @@ alias more=less
 
 alias vim="nvim"
 alias p="sudo pacman"
+alias todo="python-todo"

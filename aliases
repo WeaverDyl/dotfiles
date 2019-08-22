@@ -9,3 +9,10 @@ alias more=less
 alias vim="nvim"
 alias p="sudo pacman"
 alias todo="python-todo"
+
+alias gcl="git clone"
+alias gc="git commit"
+alias gp="git push"
+alias gf="git fetch"
+alias ga="git add"
+alias gs="git status"

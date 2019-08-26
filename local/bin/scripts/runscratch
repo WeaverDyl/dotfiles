@@ -15,6 +15,6 @@ then
 else
 	echo "Window not detected... spawning."
 	i3 "exec --no-startup-id $TERMINAL -e $script --name scratch_$script"
-	sleep 0.5 # hax
+	sleep 0.4 # hax
 	i3 "[instance=\"scratch_$script\"] scratchpad show move position center"
 fi

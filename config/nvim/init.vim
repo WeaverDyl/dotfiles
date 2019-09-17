@@ -67,7 +67,7 @@ map <C-z> <Nop>
 let NERDTreeMapOpenInTab='<C-z>' " remap t to ctrl-z
 
 noremap <C-a> :call NerdTreeToggleFind()<cr>
-noremap! <expr> <C-a> :<Esc> NerdTreeToggleFind()<cr>
+inoremap <C-a> <Esc>:call NerdTreeToggleFind()<cr>
 
 " YouCompleteMe
 let g:ycm_autoclose_preview_window_after_insertion = 1

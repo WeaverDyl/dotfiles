@@ -111,6 +111,8 @@ function! Buffer_Delete()
 		bd
 	endif
 endfunction
+
+" Buffer traversing
 noremap <leader>q :call Buffer_Delete()<cr>
 noremap <leader>n :bprevious<cr>
 noremap <leader>m :bnext<cr>

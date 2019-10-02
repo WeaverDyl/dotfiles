@@ -99,57 +99,57 @@ bindsym $mod+Ctrl+9 move container to workspace $ws9
 #}}}
 
 #{{{ Gap and Window Settings
-bindsym $mod+r mode "resize"
-mode "resize" {
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+	bindsym $mod+r mode "resize"
+	mode "resize" {
+			bindsym Left resize shrink width 3 px or 3 ppt
+			bindsym Down resize grow height 3 px or 3 ppt
+			bindsym Up resize shrink height 3 px or 3 ppt
+			bindsym Right resize grow width 3 px or 3 ppt
 
-        # exit resize mode: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
+			# exit resize mode: Enter or Escape
+			bindsym Return mode "default"
+			bindsym Escape mode "default"
+	}
 
-# Gap settings -> 0 or default
-bindsym $mod+Ctrl+s gaps inner current set 0; gaps outer current set 0
-bindsym $mod+Ctrl+d gaps inner current set 14; gaps outer current set -2
-#}}}
+	# Gap settings -> 0 or default
+	bindsym $mod+Ctrl+s gaps inner current set 0; gaps outer current set 0
+	bindsym $mod+Ctrl+d gaps inner current set 14; gaps outer current set -2
+	#}}}
 
-#{{{ Application Autostart Settings
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-#exec --no-startup-id compton -b --config ~/.config/compton.conf
-exec --no-startup-id xfce4-power-manager
-exec --no-startup-id clipit --no-icon
-exec_always --no-startup-id fix_xcursor
-exec --no-startup-id nm-applet
-exec --no-startup-id spotify
-exec --no-startup-id discord
-exec --no-startup-id keepassxc
-exec --no-startup-id fluxgui
-exec --no-startup-id dropbox
-#}}}
+	#{{{ Application Autostart Settings
+	exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+	#exec --no-startup-id compton -b --config ~/.config/compton.conf
+	exec --no-startup-id xfce4-power-manager
+	exec --no-startup-id clipit --no-icon
+	exec_always --no-startup-id fix_xcursor
+	exec --no-startup-id nm-applet
+	exec --no-startup-id spotify
+	exec --no-startup-id discord
+	exec --no-startup-id keepassxc
+	exec --no-startup-id fluxgui
+	exec --no-startup-id dropbox
+	#}}}
 
-#{{{ Floating Application Settings
-for_window [class="Galculator"] floating enable border pixel 1
-for_window [class="GParted"] floating enable border normal
-for_window [class="Lightdm-settings"] floating enable
-for_window [class="Lxappearance"] floating enable border normal
-for_window [class="Manjaro Settings Manager"] floating enable border normal
-for_window [class="Pamac-manager"] floating enable
-for_window [class="Pavucontrol"] floating enable
-for_window [class="qt5ct"] floating enable border normal
-for_window [class="(?i)System-config-printer.py"] floating enable border normal
-for_window [class="vlc"] floating enable
-for_window [class="Sxiv"] floating enable border pixel 3
-for_window [class="keepassxc"] floating enable
-for_window [class="blueman-manager"] floating enable
-for_window [class="Xarchiver"] floating enable
-for_window [class="^Pcmanfm$"] floating enable
+	#{{{ Floating Application Settings
+	for_window [class="Galculator"] floating enable border pixel 1
+	for_window [class="GParted"] floating enable border normal
+	for_window [class="Lightdm-settings"] floating enable
+	for_window [class="Lxappearance"] floating enable border normal
+	for_window [class="Manjaro Settings Manager"] floating enable border normal
+	for_window [class="Pamac-manager"] floating enable
+	for_window [class="Pavucontrol"] floating enable
+	for_window [class="qt5ct"] floating enable border normal
+	for_window [class="(?i)System-config-printer.py"] floating enable border normal
+	for_window [class="vlc"] floating enable
+	for_window [class="Sxiv"] floating enable border pixel 3
+	for_window [class="keepassxc"] floating enable
+	for_window [class="blueman-manager"] floating enable
+	for_window [class="Xarchiver"] floating enable
+	for_window [class="^Pcmanfm$"] floating enable
 
-for_window [class="minecraft-launcher"] floating enable
-for_window [instance="scratch_todo"] floating enable sticky enable resize set 900 400
-#}}}
+	for_window [class="minecraft-launcher"] floating enable
+	for_window [instance="scratch_todo"] floating enable sticky enable resize set 900 400
+	#}}}
 
 #{{{ Scratchpad Settings
 for_window [class="Spotify"] mark "spotify", move scratchpad

@@ -8,7 +8,8 @@ main() {
 	temp_base=$(curl -s wttr.in/?format="%t" | sed "s/+//g")
 
 	if [[ ${weather_base,,} =~ error|500|504|unknown ]] ||
-		[[ ${temp_base,,} =~ error|500|504|unknown ]]; then
+		[[ ${temp_base,,} =~ error|500|504|unknown ]] ||
+		[[ -z ${weather_base} || -z ${temp_base} ]]; then
 		echo "Weather Error"
 	else
 		# All OK to continue
